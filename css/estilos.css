@@ -1,5 +1,11 @@
-
-
+/* Fuente Oswald*/
+@font-face {
+  font-family: 'Oswald';
+  src: url('../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 700; /* Soporta todos los grosores del archivo variable */
+  font-style: normal;
+  font-display: swap;
+}
 
 /*Integrante 2: Header, navegación (incluyendo :hover) y footer.*/
 
