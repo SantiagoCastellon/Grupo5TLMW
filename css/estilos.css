@@ -10,35 +10,37 @@
 /*Integrante 2: Header, navegación (incluyendo :hover) y footer.*/
 
 :root {
+    /*Integrante 1: Variables CSS*/
     --color-primario: #c90e0e;    
     --color-secundario: #1A2B4A;  
     --color-acento: #FFB400;      
     --color-fondo: #808080;       
     --color-texto: #1A1A1A;       
-    --fuente-principal: 'Oswald', sans-serif;
+    --fuente-principal: 'Oswald', sans-serif; /*Integrante 1: Tipografia general*/
 }
 
 
 
 
 * {
+    /*Integrante 1: Reset*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: var(--fuente-principal);
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
+body { 
+    font-family: var(--fuente-principal); /*Integrante 1: Tipografia general y estilos del body*/
+    font-size: 16px; /*Integrante 1: Tipografia general y estilos del body*/
+    line-height: 1.6; /*Integrante 1: Tipografia general y estilos del body*/
+    max-width: 1100px; /*Integrante 1: Estilos del body*/
+    margin: 0 auto; /*Integrante 1: Estilos del body*/
+    padding: 0 1rem; /*Integrante 1: Estilos del body*/
+    background-color: var(--color-fondo); /*Integrante 1: Estilos del body*/
+    color: var(--color-texto); /*Integrante 1: Tipografia general y estilos del body*/
 }
 
-header {
+header { /* Integrante 2: Header */
     background-color: var(--color-primario);
     color: #ffffff;
     padding: 2rem;
@@ -46,29 +48,29 @@ header {
     border-bottom: 4px solid var(--color-acento);
 }
 
-header h1 {
+header h1 { /* Integrante 2: Header */
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-nav {
+nav { /* Integrante 2: Navegación (incluyendo :hover) */
     margin-top: 1rem;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center; 
 }
 
-nav ul {
+nav ul { /* Integrante 2: Navegación (incluyendo :hover) */
     list-style: none;
     padding: 0;
 }
 
-nav li {
+nav li { /* Integrante 2: Navegación (incluyendo :hover) */
     display: inline-block; 
     margin: 0 10px;        
 }
 
-nav a {
+nav a { /* Integrante 2: Navegación (incluyendo :hover) */
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
@@ -78,12 +80,12 @@ nav a {
 }
 
 
-nav a:hover {
+nav a:hover { /* Integrante 2: Navegación (incluyendo :hover) */
     background-color: var(--color-acento);
     border-radius: 4px;
 }
 
-footer {
+footer { /* Integrante 2: Footer */
     background-color: var(--color-secundario);
     color: #ffffff;
     padding: 2rem;
@@ -91,7 +93,7 @@ footer {
     margin-top: 3rem;
 }
 
-footer a {
+footer a { /* Integrante 2: Footer */
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -99,7 +101,7 @@ footer a {
     font-weight: 700;
 }
 
-footer a:hover {
+footer a:hover { /* Integrante 2: Footer */
     color: var(--color-acento);
 }
 /*Fin de código escrito por Integrante 2.*/
