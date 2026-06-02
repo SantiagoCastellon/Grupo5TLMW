@@ -14,7 +14,7 @@
     --color-primario: #c90e0e;    
     --color-secundario: #1A2B4A;  
     --color-acento: #FFB400;      
-    --color-fondo: #808080;       
+    --color-fondo: #fffcfc;       
     --color-texto: #1A1A1A;       
     --fuente-principal: 'Oswald', sans-serif; /*Integrante 1: Tipografia general*/
 }
@@ -107,57 +107,60 @@ footer a:hover { /* Integrante 2: Footer */
 /*Fin de código escrito por Integrante 2.*/
 
 
-
-/*Integrantes 3:
-	-Secciones de contenido: main, section, article, heading (h1, h2, ...), aside, p, ol, ul, .
-*/
-
-/*Selectores para los componentes. No incluye header, footers.*/
 main {
-	/*Tipografía: creo que ya se modifica el <main> si antes se lo establece en el <body>. */
-
-
-	/*Color*/
+    /*Integrantes 3. Color.*/
 	background-color: var(--color-fondo);
     color: var(--color-texto);
 
-    /*Espaciado y box model*/
+    /*Integrantes 3. Espaciado y box model.*/
     margin: auto;
     padding: 1rem;
     max-width: auto;
 }
 
 section, article, aside {
-	/*Espaciado y box model*/
+    /*Integrantes 3. Espaciado y box model.*/
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 .Programas-Iniciativas {
-	/*Color*/
+    /*Integrantes 3. Color.*/
 	background-color: var(--color-fondo);
     color: var(--color-texto);
 }
 
 h1{
-	/*Tipografía, y color de heading.*/
+    /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 3em;
     color: var(--color-primario);
 } 
 
 h2 {
-	/*Tipografía, y color de heading.*/
+    /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 2em;
 	color: var(--color-secundario);
 } 
 
 h3 {
-	/*Tipografía, y color de heading.*/
+    /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 1em;
 }
 
 p, ol, ul{
+    /*Integrantes 3. Espaciado y box model. */
 	margin: 0 auto;
     padding: 0 1rem;
 }
-/*Fin de código escrito por Integrante 3.*/
+
+
+
+
+
+
+
+
+
+
+
+/*Integrantes 3: Secciones de contenido: main, section, article, heading (h1, h2, ...), aside, p, ol, ul. Solo escribe esto para recordarme qué hacer. */
