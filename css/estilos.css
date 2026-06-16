@@ -11,11 +11,11 @@
 
 :root {
     /*Integrante 1: Variables CSS*/
-    --color-primario: #fdfdfd;    
-    --color-secundario: #dd0404;  
+    --color-primario: #c90e0e;    
+    --color-secundario: #1A2B4A;  
     --color-acento: #FFB400;      
-    --color-fondo: var(--color-secundario);   
-    --color-texto: var(--color-primario);   
+    --color-fondo: #e0dcdc;       
+    --color-texto: #1A1A1A;       
     --fuente-principal: 'Oswald', sans-serif; /*Integrante 1: Tipografia general*/
 }
 
@@ -142,7 +142,7 @@ section, article, aside {
 h1{
 	/*Tipografía, y color de heading.*/
 	font-size: 3em;
-    color: var(--color-primario);
+    color: var(--color-fondo);
 } 
 
 h2 {
@@ -161,3 +161,4 @@ p, ol, ul{
     padding: 0 1rem;
 }
 /*Fin de código escrito por Integrante 3.*/
+
