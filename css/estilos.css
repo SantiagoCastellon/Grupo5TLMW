@@ -107,56 +107,48 @@ footer a:hover { /* Integrante 2: Footer */
 /*Fin de código escrito por Integrante 2.*/
 
 
-
-/*Integrantes 3:
-	-Secciones de contenido: main, section, article, heading (h1, h2, ...), aside, p, ol, ul, .
-*/
-
-/*Selectores para los componentes. No incluye header, footers.*/
 main {
-	/*Tipografía: creo que ya se modifica el <main> si antes se lo establece en el <body>. */
-
-
-	/*Color*/
+    /*Integrantes 3. Color.*/
 	background-color: var(--color-fondo);
     color: var(--color-texto);
 
-    /*Espaciado y box model*/
+    /*Integrantes 3. Espaciado y box model.*/
     margin: auto;
     padding: 1rem;
     max-width: auto;
 }
 
 section, article, aside {
-	/*Espaciado y box model*/
+    /*Integrantes 3. Espaciado y box model.*/
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 .Programas-Iniciativas {
-	/*Color*/
+    /*Integrantes 3. Color.*/
 	background-color: var(--color-fondo);
     color: var(--color-texto);
 }
 
 h1{
-	/*Tipografía, y color de heading.*/
+    /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 3em;
     color: var(--color-fondo);
 } 
 
 h2 {
-	/*Tipografía, y color de heading.*/
+    /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 2em;
 	color: var(--color-primario);
 } 
 
 h3 {
-	/*Tipografía, y color de heading.*/
+    /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 1em;
 }
 
 p, ol, ul{
+    /*Integrantes 3. Espaciado y box model. */
 	margin: 0 auto;
     padding: 0 1rem;
 }
