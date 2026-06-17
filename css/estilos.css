@@ -40,10 +40,6 @@ body {
     color: var(--color-texto); /*Integrante 1: Tipografia general y estilos del body*/
 
     /*Integrante 3. Flexbox*/
-    display: flex;
-    /*flex-wrap: wrap; Si un contenedor (div, section, etc) ocupa 120 px, lo muestra en la pantalla, y el contendor que sigue lo baja hacia abajo, en caso de que no haya lugar en la columna.*/
-    gap: 20px; /*Agrega espacio entre elementos hijos de un contenedor, sin tener que poner margin a cada uno.*/
-    margin: 0;
 }
 
 header { /* Integrante 2: Header */
