@@ -59,7 +59,7 @@
             </nav>
         </header>
         <!-- 
-          CAMBIO 3: Se añadieron clases de maquetación de Bootstrap al <main> (container mt-4) 
+          CAMBIO 5: Se añadieron clases de maquetación de Bootstrap al <main> (container mt-4) 
           y a la lista ordenada (list-unstyled) para centrar el contenido de la página con márgenes limpios 
           y remover los números por defecto de la lista, dándole un aspecto más moderno a las secciones.
         -->
@@ -100,8 +100,16 @@
                         </h2>
                         <p>
                             MSF trabaja en una amplia gama de áreas para abordar las necesidades de las poblaciones vulnerables. Algunas de las áreas clave incluyen:
-                            <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png" alt="Resumen visual de las áreas de trabajo">
                         </p>
+                        <!-- 
+                        CAMBIO 6: Se envolvió la imagen en un contenedor centrado (text-center mt-3) 
+                        y se le aplicó la clase 'img-fluid' junto con 'rounded'. Esto garantiza que la imagen 
+                        se encoja correctamente en pantallas de celulares sin desbordar el ancho de la pantalla.
+                        -->
+                        <div class="text-center mt-3">
+                            <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png" class="img-fluid rounded" alt="Resumen visual de las áreas de trabajo">
+                        </div>
+                        
                     </li>
                 </section>
             </ol>
