@@ -19,6 +19,14 @@
                         <img src="imagenes/msf_logo.svg" alt="Logo de Médicos Sin Fronteras" width="40" height="40" class="d-inline-block align-text-top me-2">
                         <span>Médicos Sin Fronteras AR</span>
                     </h2>
+                    <!-- 
+                      CAMBIO 1: Se agregó el botón hamburguesa (navbar-toggler).
+                      Este botón solo es visible en pantallas chicas (mobile/tablet). 
+                      El atributo 'data-bs-target="#navbarNav"' es clave, ya que le dice a Bootstrap qué elemento debe abrir/cerrar.
+                    -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="#PresentacionONG" class="nav-link">Quienes somos</a></li>
                         <li class="nav-item"><a href="#MisionONG" class="nav-link">Que hacemos</a></li>
