@@ -27,15 +27,22 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="#PresentacionONG" class="nav-link">Quienes somos</a></li>
-                        <li class="nav-item"><a href="#MisionONG" class="nav-link">Que hacemos</a></li>
-                        <li class="nav-item"><a href="#ResumenAreasDeTrabajo" class="nav-link">Ver Areas de Trabajo</a></li>
-                        <li class="nav-item"><a href="contacto.html" class="nav-link">Contactos</a></li>
-                        <li class="nav-item"><a href="programas.html" class="nav-link">Programas e iniciativas</a></li>
-                        <li class="nav-item"><a href="nosotros.html" class="nav-link">Saber más sobre nosotros</a></li>
-                        <li class="nav-item"><a href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer" class="nav-link">Visitar sitio oficial</a></li>
-                    </ul>
+                    <!-- 
+                      CAMBIO 2: Se creó este <div> contenedor con las clases 'collapse navbar-collapse' e id 'navbarNav'.
+                      En el commit anterior, la lista <ul> estaba suelta. Ahora, al envolverla en este <div>, logramos que se oculte 
+                      en pantallas chicas y se transforme en el menú desplegable. El id debe coincidir con el 'data-bs-target' del botón.
+                    -->
+                    <div class="collapse navbar-collapse" id="navbarNav"></div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#PresentacionONG" class="nav-link">Quienes somos</a></li>
+                            <li class="nav-item"><a href="#MisionONG" class="nav-link">Que hacemos</a></li>
+                            <li class="nav-item"><a href="#ResumenAreasDeTrabajo" class="nav-link">Ver Areas de Trabajo</a></li>
+                            <li class="nav-item"><a href="contacto.html" class="nav-link">Contactos</a></li>
+                            <li class="nav-item"><a href="programas.html" class="nav-link">Programas e iniciativas</a></li>
+                            <li class="nav-item"><a href="nosotros.html" class="nav-link">Saber más sobre nosotros</a></li>
+                            <li class="nav-item"><a href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer" class="nav-link">Visitar sitio oficial</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
