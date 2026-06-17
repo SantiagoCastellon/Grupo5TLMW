@@ -38,6 +38,12 @@ body {
     padding: 0 1rem; /*Integrante 1: Estilos del body*/
     background-color: var(--color-fondo); /*Integrante 1: Estilos del body*/
     color: var(--color-texto); /*Integrante 1: Tipografia general y estilos del body*/
+
+    /*Integrante 3. Flexbox*/
+    display: flex;
+    /*flex-wrap: wrap; Si un contenedor (div, section, etc) ocupa 120 px, lo muestra en la pantalla, y el contendor que sigue lo baja hacia abajo, en caso de que no haya lugar en la columna.*/
+    gap: 20px; /*Agrega espacio entre elementos hijos de un contenedor, sin tener que poner margin a cada uno.*/
+    margin: 0;
 }
 
 header { /* Integrante 2: Header */
@@ -58,6 +64,9 @@ nav { /* Integrante 2: Navegación (incluyendo :hover) */
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center; 
+
+    /* Integrante 3. Flexbox. */
+
 }
 
 nav ul { /* Integrante 2: Navegación (incluyendo :hover) */
@@ -91,6 +100,8 @@ footer { /* Integrante 2: Footer */
     padding: 2rem;
     text-align: center;
     margin-top: 3rem;
+
+    /* Integrante 3. Flexbox. */
 }
 
 footer a { /* Integrante 2: Footer */
@@ -104,7 +115,6 @@ footer a { /* Integrante 2: Footer */
 footer a:hover { /* Integrante 2: Footer */
     color: var(--color-acento);
 }
-/*Fin de código escrito por Integrante 2.*/
 
 
 main {
@@ -152,5 +162,5 @@ p, ol, ul{
 	margin: 0 auto;
     padding: 0 1rem;
 }
-/*Fin de código escrito por Integrante 3.*/
+
 
