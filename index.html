@@ -58,10 +58,16 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <!-- 
+          CAMBIO 3: Se añadieron clases de maquetación de Bootstrap al <main> (container mt-4) 
+          y a la lista ordenada (list-unstyled) para centrar el contenido de la página con márgenes limpios 
+          y remover los números por defecto de la lista, dándole un aspecto más moderno a las secciones.
+        -->
+        <main class="container mt-4">
             <h1>Medicos sin fronteras AR</h1>
-            <ol>
-                <section id="PresentacionONG">
+            <ol class="list-unstyled">
+                <!-- Se agregó la clase mb-4 a las secciones para darles una separación uniforme en el flujo vertical -->
+                <section id="PresentacionONG" class="mb-4">
                     <li>
                         <h2>
                             Presentación de la ONG
@@ -72,21 +78,22 @@
                         </p>
                     </li>
                 </section>
-                <section id="MisionONG">
+                <section id="MisionONG" class="mb-4">
                     <li>
                         <h2>
                             Misión de la ONG
                         </h2>
                         <p>
                             La misión de MSF se sustenta en dos pilares fundamentales:
-                            <ul>
+                            <!-- Se añadió un pequeño margen superior (mt-2) a la lista interna -->
+                            <ul class="mt-2">
                                 <li><strong>Acción Médica:</strong> Salvar vidas y aliviar el sufrimiento mediante la atención médica directa en crisis agudas.</li>
                                 <li><strong>Testimonio (Témoignage):</strong> Como organización independiente, MSF se reserva el derecho de denunciar públicamente las violaciones de derechos humanos y las injusticias que presencia en el terreno, buscando atraer la atención sobre crisis olvidadas.</li>
                             </ul>
                         </p>
                     </li>
                 </section>
-                <section id="ResumenAreasDeTrabajo">
+                <section id="ResumenAreasDeTrabajo" class="mb-4">
                     <li>
                         <h2>
                             Resumen de las áreas de trabajo
