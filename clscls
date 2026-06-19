@@ -1,0 +1,187 @@
+[33mcommit df30e707fc79679c73e4247026b90120689ca6b1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat May 16 18:21:19 2026 -0300
+
+    Creo archivo css (dentro de carpeta css). Puse color, tipografia y espaciado y boz model para los temas de Integrante 3, que son las secciones (section, article, heading, etc).
+
+[33mcommit 25a19ca3103d961e3b033764f15e0bd6b3663f87[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat May 16 18:14:08 2026 -0300
+
+    Elimino carpeta css
+
+[33mcommit 7ea5e6f2ef480e1fa0fb82855d6c581cd215dfea[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat May 16 17:53:02 2026 -0300
+
+    Arreglo de referencia css
+
+[33mcommit 16187020bbd3ff4e82100f022d2c303bd05b0794[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat May 16 17:01:54 2026 -0300
+
+    Cree archivo css. Puse el color, tipografia, espaciado y model box para secciones (integrante 3). Antes me olvide hacer commit del archivo programas.hmtl. En html, Colocacion de logotipo 'Médicos sin fronteras'. Elimine los id que sobraban, deben ser únicos por pagina. Modficia algunos nombres para class.
+
+[33mcommit 993a4428067c1c91b82453d2685ab434117da37b[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat May 16 16:49:41 2026 -0300
+
+    Creacion de carpeta css
+
+[33mcommit 9b9a992ec7e90a73f3db1ba6c9d1268e792c47d8[m
+Merge: 8a5fd87 b584ca9
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat May 16 16:25:20 2026 -0300
+
+    Merge branch 'main' of https://github.com/SantiagoCastellon/Grupo5TLMW
+
+[33mcommit b584ca9eed81aed2021eaa94bb431d1182afe58c[m
+Author: Sofia <sofiaroldan0006@gmail.com>
+Date:   Sat May 16 15:34:50 2026 -0300
+
+    cambie la tabla de info
+
+[33mcommit 32e175d393f604f5d4cd58b5d617b50e7ac053bd[m
+Author: Sofia <sofiaroldan0006@gmail.com>
+Date:   Fri May 15 21:17:09 2026 -0300
+
+    cambie la descripcion de programas
+
+[33mcommit 7111dc5f42c324b6d8a23c4172b54593bee15017[m
+Author: Sofia <sofiaroldan0006@gmail.com>
+Date:   Fri May 15 21:10:49 2026 -0300
+
+    tabla de informacion + formulario de incripcion
+
+[33mcommit 7e03a5917354c988f124074529309f82201d049c[m
+Author: Pablo Gallegos Alejandro <111704805+PabloG2356@users.noreply.github.com>
+Date:   Fri May 15 13:57:40 2026 -0300
+
+    Create estilos.css
+    
+    Creacion de archivo css.
+
+[33mcommit 8a5fd8785ed4b3f9e4d3d1c8e6e629a4497c74f9[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Tue May 12 09:34:47 2026 -0300
+
+    Corregi los errores que tenia en HMTL. Escribe mal article (ponia articule). Y que section va dirigido a temas similares, mientras que article es para arituclos individuales.
+
+[33mcommit aad4fd90779403697c28a3364610100ee9414933[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Thu May 7 16:41:40 2026 -0300
+
+    Corregir mediante validacion de html W3C (me falto corregir las etiquetas de article, no son validas). Complete el aside con el resto de definiciones. Corregir las imagenes que no se veian. Agregue un enlace a otro sitio web (que tenga target=blanck), o sea, un enlace externo.
+
+[33mcommit c4340e9ed5f1578ac99e0828bec76cbc01f0beea[m
+Author: Santiago Castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 30 15:58:36 2026 -0300
+
+    fix: Reorganicé la navigación de link del nosotros.html y removí la redundante seccion en el footer.
+
+[33mcommit 8981ab72cc937d2e5ae17e0e3a3977fd48ee2b29[m
+Author: Santiago Castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 30 15:54:10 2026 -0300
+
+    fix: Corregí el enlace de contactos para que una vez que se haga click en el indice, lleve al usuario directamente a contacto.html. Además, elimine la sección redundante en el pie de página.
+
+[33mcommit a194a9e0110951f8bae916f3ba958c26260dba09[m
+Author: Santiago Castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 30 15:50:54 2026 -0300
+
+    fix: Simplifique la navigacion removiendo la innecesaria seccion para programas y el puse el link directamente en el indice.
+
+[33mcommit 227451cc3d5abec6432da7aad60fa1d13b3656b7[m
+Author: Santiago Castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 30 15:44:25 2026 -0300
+
+    fix: Se puso directamente el enlace de la pagina oficial de MSF en el indice, eliminando la seccion inecesaria.
+
+[33mcommit 15a63ba6f23c6af7587fd87faaf3125cc8a1d8ba[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat Apr 25 17:00:44 2026 -0300
+
+    Arreglo de identacion.
+
+[33mcommit 86869b5decae833e958a1588dce9b0ae5a89e18c[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat Apr 25 16:55:40 2026 -0300
+
+    Agregue las imagenes al aside. Me falta completar las definiciones en la seccion Definicones:enfermedades. Pero en el TP, con uno bastaba. Igual luego lo completare.
+
+[33mcommit 0338f84d99cf0c93c2b7b736ccf2dd1501cb9571[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat Apr 25 16:47:38 2026 -0300
+
+    Agregacion de aside para poner imagines que visualizen los programas/iniciativas. Y el footer para contactor con la ONG.
+
+[33mcommit ceac7cef3e95c293a9fa780932ad6cf73fd2221f[m
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat Apr 25 16:44:25 2026 -0300
+
+    Agrgracion de main. El articulo son los progrmas/iniciativas, y cada seccion son los diferentes programas. Son 3. Marcados con etiquetas strong y em donde deberian, y agregado el link para viajar dentro de la misma pagina, con etiqueta a href=
+
+[33mcommit 123063a6442ee5a2a4a88bc190e6c52b5290f65f[m
+Merge: bcbb1e7 9e04969
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Sat Apr 25 16:14:27 2026 -0300
+
+    Merge branch 'main' of https://github.com/SantiagoCastellon/Grupo5TLMW
+
+[33mcommit 9e0496912a7611b825c6f74f5b3843cf1a5cf9c1[m
+Author: Alejandro <alejandrobestilleiro7@gmail.com>
+Date:   Sat Apr 25 00:45:17 2026 -0300
+
+    feat: Añadi la url relativa a index.html
+
+[33mcommit bcbb1e79e2d7e0de1955dd251ae82b66da415bec[m
+Merge: c01e5e1 59c8f83
+Author: Pablo Gallegos <pablogallegos102@gmail.com>
+Date:   Fri Apr 24 19:35:53 2026 -0300
+
+    Merge branch 'main' of https://github.com/SantiagoCastellon/Grupo5TLMW
+
+[33mcommit 59c8f83ce3252a8940f1b3ddef99b17ae6dea155[m
+Author: Alejandro <alejandrobestilleiro7@gmail.com>
+Date:   Fri Apr 24 13:47:20 2026 -0300
+
+    Mi primer commit
+
+[33mcommit c01e5e1b21f2bad4586bca7753d0049273de38fa[m
+Author: Pablo <pablogallegos102@gmail.com>
+Date:   Thu Apr 23 21:26:28 2026 -0300
+
+    Commit en esta rama porque en el master rama no me deja al parecer. Cree el header y el nav, para volver a pagina de inicio.
+
+[33mcommit 2acb63177eb9c2ae68a7464c0d78ae7497cfbedd[m
+Author: SantiagoCastellon <150950257+SantiagoCastellon@users.noreply.github.com>
+Date:   Thu Apr 23 16:28:04 2026 -0300
+
+    fix: Se arregló los nombres del grupo en README.md
+
+[33mcommit d2f98a548c7bdb10a72828de9883cd8a834a0673[m
+Author: santiago castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 23 15:33:45 2026 -0300
+
+    feat: Añadi guiones a los nombres de los integrantes en README.md para visualizar mejor los nombres.
+
+[33mcommit c33008426a6d94ce977863ec12dc5adff48fcde8[m
+Author: santiago castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 23 15:30:46 2026 -0300
+
+    feat: Añadi los nombres de los integrantes segun su GitHub al README.md
+
+[33mcommit 03eafed4d26c7bb79fc3cf250da51e04baa062c0[m
+Author: santiago castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 23 15:24:29 2026 -0300
+
+    feat: Elimine el archivo 'hola' que ya no es necesario
+
+[33mcommit 1c68af99720c2b03189a93aa3fb470166f825246[m
+Author: santiago castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar>
+Date:   Thu Apr 23 15:18:29 2026 -0300
+
+    feat: Añadi el atributo rel="noopener noreferrer" al enlace del sitio oficial por seguridad en index.html
+
+[33mcommit 2b598a65902dfcec8bd99d8174a3f1685cee3bbb[m
+Author: santiago castellon <santiagoelias.castellon@estudiantes.unahur.edu.ar

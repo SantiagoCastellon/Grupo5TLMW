@@ -1,127 +1,78 @@
-
-
-
-
-
-
-
-/*Integrantes 3:
-	-Secciones de contenido: main, section, article, heading (h1, h2, ...), aside, p, ol, ul, .
-*/
-
-
-/*Selectores para los componentes. No incluye header, footers.*/
-main {
-	/*Tipografía: creo que ya se modifica el <main> si antes se lo establece en el <body>. */
-
-
-	/*Color*/
-	background-color: var(--color-fondo);
-    color: var(--color-texto);
-
-    /*Espaciado y box model*/
-    margin: auto;
-    padding: 1rem;
-    max-width: auto;
+/* Fuente Oswald*/
+@font-face {
+  font-family: 'Oswald';
+  src: url('../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 700; /* Soporta todos los grosores del archivo variable */
+  font-style: normal;
+  font-display: swap;
 }
-
-section, article, aside {
-	/*Espaciado y box model*/
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.Programas-Iniciativas {
-	/*Color*/
-	background-color: var(--color-fondo);
-    color: var(--color-texto);
-}
-
-h1{
-	/*Tipografía, y color de heading.*/
-	font-size: 3em;
-    color: var(--color-primario);
-} 
-
-h2 {
-	/*Tipografía, y color de heading.*/
-	font-size: 2em;
-	color: var(--color-secundario);
-} 
-
-h3 {
-	/*Tipografía, y color de heading.*/
-	font-size: 1em;
-}
-
-p, ol, ul{
-	margin: 0 auto;
-    padding: 0 1rem;
-}
-/*Fin de código escrito por Integrante 3.*/
 
 /*Integrante 2: Header, navegación (incluyendo :hover) y footer.*/
 
 :root {
-    --main-color-primario: #c90e0e;    
-    --main-color-secundario: #808080;  
-    --main-color-acento: #131212;      
-    --main-color-fondo: #faf3f3;       
-    --main-color-texto: #1A1A1A;       
-    --main-fuente-principal: 'Roboto', sans-serif;
+    --color-primario: #c90e0e;    
+    --color-secundario: #1A2B4A;  
+    --color-acento: #FFB400;      
+    --color-fondo: #808080;       
+    --color-texto: #1A1A1A;       
+    --fuente-principal: 'Roboto', sans-serif;
 }
 
 
 
 
 * {
+    /*Integrante 1: Reset*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: var(--main-fuente-principal);
+    font-family: var(--fuente-principal);
     font-size: 16px;
     line-height: 1.6;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1rem;
-    background-color: var(--main-color-fondo);
-    color: var(--main-color-texto);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
 header {
-    background-color: var(--main-color-primario);
+    background-color: var(--color-primario);
     color: #ffffff;
     padding: 2rem;
     text-align: center;
     border-bottom: 4px solid var(--main-color-acento);
 }
 
-header h1 {
+header h1 { /* Integrante 2: Header */
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-nav {
+nav { /* Integrante 2: Navegación (incluyendo :hover) */
     margin-top: 1rem;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center; 
+
+    /* Integrante 3. Flexbox. */
+
 }
 
-nav ul {
+nav ul { /* Integrante 2: Navegación (incluyendo :hover) */
     list-style: none;
     padding: 0;
 }
 
-nav li {
+nav li { /* Integrante 2: Navegación (incluyendo :hover) */
     display: inline-block; 
     margin: 0 10px;        
 }
 
-nav a {
+nav a { /* Integrante 2: Navegación (incluyendo :hover) */
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
@@ -132,19 +83,21 @@ nav a {
 
 
 nav a:hover {
-    background-color: var(--main-color-acento);
+    background-color: var(--color-acento);
     border-radius: 4px;
 }
 
 footer {
-    background-color: var(--main-color-secundario);
+    background-color: var(--color-secundario);
     color: #ffffff;
     padding: 2rem;
     text-align: center;
     margin-top: 3rem;
+
+    /* Integrante 3. Flexbox. */
 }
 
-footer a {
+footer a { /* Integrante 2: Footer */
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -153,6 +106,54 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--main-color-acento);
+    color: var(--color-acento);
 }
-/*Fin de código escrito por Integrante 2.*/
+
+
+main {
+    /*Integrantes 3. Color.*/
+	background-color: var(--color-fondo);
+    color: var(--color-texto);
+
+    /*Integrantes 3. Espaciado y box model.*/
+    margin: auto;
+    padding: 1rem;
+    max-width: auto;
+}
+
+section, article, aside {
+    /*Integrantes 3. Espaciado y box model.*/
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.Programas-Iniciativas {
+    /*Integrantes 3. Color.*/
+	background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1{
+    /*Integrantes 3. Tipografía, y color de heading.*/
+	font-size: 3em;
+    color: var(--color-fondo);
+} 
+
+h2 {
+    /*Integrantes 3. Tipografía, y color de heading.*/
+	font-size: 2em;
+	color: var(--color-primario);
+} 
+
+h3 {
+    /*Integrantes 3. Tipografía, y color de heading.*/
+	font-size: 1em;
+}
+
+p, ol, ul{
+    /*Integrantes 3. Espaciado y box model. */
+	margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
