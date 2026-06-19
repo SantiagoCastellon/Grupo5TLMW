@@ -156,4 +156,33 @@ p, ol, ul{
     padding: 0 1rem;
 }
 
+/* Integrante 4: Personalización Bootstrap */
+
+.navbar{
+    border-radius: 12px;
+}
+
+.table th{
+    background-color: var(--color-primario);
+    color: white;
+}
+
+button{
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+button:hover{
+    background-color: #a50c0c;
+}
+
+.badge{
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+
+
 
