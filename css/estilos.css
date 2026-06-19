@@ -63,12 +63,12 @@ p, ol, ul{
 /*Integrante 2: Header, navegación (incluyendo :hover) y footer.*/
 
 :root {
-    --color-primario: #c90e0e;    
-    --color-secundario: #1A2B4A;  
-    --color-acento: #FFB400;      
-    --color-fondo: #808080;       
-    --color-texto: #1A1A1A;       
-    --fuente-principal: 'Roboto', sans-serif;
+    --main-color-primario: #c90e0e;    
+    --main-color-secundario: #808080;  
+    --main-color-acento: #131212;      
+    --main-color-fondo: #faf3f3;       
+    --main-color-texto: #1A1A1A;       
+    --main-fuente-principal: 'Roboto', sans-serif;
 }
 
 
@@ -81,22 +81,22 @@ p, ol, ul{
 }
 
 body {
-    font-family: var(--fuente-principal);
+    font-family: var(--main-fuente-principal);
     font-size: 16px;
     line-height: 1.6;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1rem;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
+    background-color: var(--main-color-fondo);
+    color: var(--main-color-texto);
 }
 
 header {
-    background-color: var(--color-primario);
+    background-color: var(--main-color-primario);
     color: #ffffff;
     padding: 2rem;
     text-align: center;
-    border-bottom: 4px solid var(--color-acento);
+    border-bottom: 4px solid var(--main-color-acento);
 }
 
 header h1 {
@@ -132,12 +132,12 @@ nav a {
 
 
 nav a:hover {
-    background-color: var(--color-acento);
+    background-color: var(--main-color-acento);
     border-radius: 4px;
 }
 
 footer {
-    background-color: var(--color-secundario);
+    background-color: var(--main-color-secundario);
     color: #ffffff;
     padding: 2rem;
     text-align: center;
@@ -153,6 +153,6 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--color-acento);
+    color: var(--main-color-acento);
 }
 /*Fin de código escrito por Integrante 2.*/
