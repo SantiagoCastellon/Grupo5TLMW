@@ -47,9 +47,12 @@ header {
     border-bottom: 4px solid var(--main-color-acento);
 }
 
-header h1 { /* Integrante 2: Header */
+header h1, img { /* Integrante 2: Header */
     font-size: 2.5rem;
     margin-bottom: 1rem;
+
+    /*Integrante 3: Espaciado y box model. Flexbox.*/
+    display: flex;
 }
 
 nav { /* Integrante 2: Navegación (incluyendo :hover) */
@@ -57,9 +60,6 @@ nav { /* Integrante 2: Navegación (incluyendo :hover) */
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center; 
-
-    /* Integrante 3. Flexbox. */
-
 }
 
 nav ul { /* Integrante 2: Navegación (incluyendo :hover) */
@@ -79,6 +79,9 @@ nav a { /* Integrante 2: Navegación (incluyendo :hover) */
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
     display: inline-block; 
+
+    /*Integrante 3: Espaciado y box model.*/
+    display: flex;
 }
 
 
@@ -93,8 +96,6 @@ footer {
     padding: 2rem;
     text-align: center;
     margin-top: 3rem;
-
-    /* Integrante 3. Flexbox. */
 }
 
 footer a { /* Integrante 2: Footer */
@@ -123,14 +124,22 @@ main {
 
 section, article, aside {
     /*Integrantes 3. Espaciado y box model.*/
-    margin: 0 auto;
+    margin: 2em;
     padding: 0 1rem;
+    flex-wrap:wrap;
+    gap:1.5rem;
 }
 
 .Programas-Iniciativas {
     /*Integrantes 3. Color.*/
-	background-color: var(--color-fondo);
+    background-color: var(--color-fondo);
     color: var(--color-texto);
+}
+.card {
+    /*Integrante 3: Espaciado y box model.*/
+    padding:1.5rem;
+    border:2px solid var(--color-primario);
+    border-radius:8px;
 }
 
 h1{
@@ -155,6 +164,81 @@ p, ol, ul{
 	margin: 0 auto;
     padding: 0 1rem;
 }
+
+aside, img {
+    /*Integrantes 3. Flexbox.*/
+    display: flex;
+}
+
+
+/*Integrantes 3. Para el titulo. Del archivo "programas.html".*/
+.DefinicionDe_enfermedades{
+    /*Integrantes 3. Espaciado y box model. Este es el contenedor principal. */
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em;
+
+    /*Integrantes 3. Tipografía, y color.*/
+    background-color: var(--color-fondo);
+    border-radius: var(--color-secundario);
+}
+
+.DefinicionDe_enfermedades h3 {
+    /*Tipografía, y color. Espaciado. */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #1f3c88;
+    border-bottom: 2px solid #e0e0e0; /*La linea que separa, abajo de "obtener más información ..." */
+    padding-bottom: 0.5em;
+}
+.DefinicionDe_enfermedades p {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.DefinicionDe_enfermedades a {
+    /* Color.  */
+    color: #0066cc;
+    text-decoration: none; /*Cuando pasas por el cursor, aparece una linea por debajo de las letras.*/
+}
+.DefinicionDe_enfermedades a:hover{
+    text-decoration: underline;
+}
+
+
+.DefinicionDe_enfermedades dl{
+    /*Tipografía, y color. Espaciado. Flexbox. */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.DefinicionDe_enfermedades dt{
+    /*Tipografía, y color. Espaciado.*/
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.2em;
+}
+
+.DefinicionDe_enfermedades dd{
+    /*Tipografía, y color. Espaciado.*/
+    margin-left: 0;
+    padding: 1em;
+    background-color: var(--color-fondo);
+    border-left: 5px solid #1f3c88;
+    border-radius: 8px;
+    color: #444;
+}
+
+.DefinicionDe_enfermedades dd:hover{
+    /* Efecto al pasar el mouse, por las definiciones. */
+    transform: translateX(5px);
+    transition: 0.3s; /*El tiempo que se expande el contenido.S*/
+    color: white;
+}
+
+
 
 /* Integrante 4: Personalización Bootstrap */
 
