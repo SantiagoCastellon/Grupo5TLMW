@@ -1,60 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <!--Bootstrap CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--CSS Propio-->
     <link rel="stylesheet" href="css/estilos.css">
     <title>Inicio MSF</title>
 </head>
-
 <body>
+
     <header>
-        <!--
-        <nav>
-            <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
-            <h2>Indice:</h2>
-            <ul>
-                <li><a href="#PresentacionONG">Quienes somos</a></li>
-                <li><a href="#MisionONG">Que hacemos</a></li>
-                <li><a href="#ResumenAreasDeTrabajo">Ver Areas de Trabajo</a></li>
-                <li><a href="contacto.html">Contactos</a></li>
-                <li><a href="programas.html">Programas e iniciativas</a></li>
-                <li><a href="nosotros.html">Saber más sobre nosotros</a></li>
-                <li><a href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">Visitar sitio oficial</a>
-                </li>
-            </ul>
-        </nav>
-        -->
-        <div class="barra-de-navegacion">
-            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" navbar-expand-lg
-                bg-body-tertiary">
-                <div class="container-fluid">
-                    <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
-                    <a class="navbar-brand" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">
-                        Medicos sin fronteras AR
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="programas.html">Programas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <img src="imagenes/msf_logo.svg" alt="Logo MSF" width="40">
+                <a class="navbar-brand ms-2" href="#">Medicos sin fronteras AR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -66,69 +34,74 @@
                                     <li><a class="dropdown-item" href="#MisionONG">Que hacemos</a></li>
                                     <li><a class="dropdown-item" href="#ResumenAreasDeTrabajo">Ver Areas de Trabajo</a>
                                     </li>
-                                </ul>
-                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor General con ancho máximo -->
+    <main class="container my-5">
+        
+        <h1 class="text-center mb-5">Medicos sin fronteras AR</h1>
+
+        <section id="PresentacionONG" class="mb-5">
+            <div class="card p-4 shadow-sm">
+                <h2 class="text-center">Presentación de la ONG</h2>
+                <p>Médicos Sin Fronteras (MSF) es una organización <strong>médico-humanitaria</strong> que brinda ayuda a víctimas de catástrofes y conflictos.</p>
+            </div>
+        </section>
+
+        <section id="MisionONG" class="mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-4 h-100 shadow-sm">
+                        <h2 class="text-danger">Misión</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Acción Médica:</strong> Salvar vidas en crisis agudas.</li>
+                            <li class="list-group-item"><strong>Testimonio:</strong> Denunciar injusticias.</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <h1>Medicos sin fronteras AR</h1>
-        <ol>
-            <section id="PresentacionONG">
-                <li>
-                    <h2>
-                        Presentación de la ONG
-                    </h2>
-                    <p>
-                        Médicos Sin Fronteras (MSF) es una organización <strong>médico-humanitaria de carácter
-                            internacional</strong> que aporta su ayuda a poblaciones en situación precaria y a víctimas
-                        de catástrofes de origen natural o humano y de conflictos armados, sin ninguna discriminación
-                        por raza, religión o ideología política.
-                        Fundada en 1971, cuenta con miles de profesionales de la salud, especialistas en logística y
-                        personal administrativo que trabajan en más de 70 países. Su labor fue reconocida con el
-                        <strong>Premio Nobel de la Paz en 1999.</strong>
-                    </p>
-                </li>
-            </section>
-            <section id="MisionONG">
-                <li>
-                    <h2>
-                        Misión de la ONG
-                    </h2>
-                    <p>
-                        La misión de MSF se sustenta en dos pilares fundamentales:
-                    <ul>
-                        <li><strong>Acción Médica:</strong> Salvar vidas y aliviar el sufrimiento mediante la atención
-                            médica directa en crisis agudas.</li>
-                        <li><strong>Testimonio (Témoignage):</strong> Como organización independiente, MSF se reserva el
-                            derecho de denunciar públicamente las violaciones de derechos humanos y las injusticias que
-                            presencia en el terreno, buscando atraer la atención sobre crisis olvidadas.</li>
-                    </ul>
-                    </p>
-                </li>
-            </section>
-            <section id="ResumenAreasDeTrabajo">
-                <li>
-                    <h2>
-                        Resumen de las áreas de trabajo
-                    </h2>
-                    <p>
-                        MSF trabaja en una amplia gama de áreas para abordar las necesidades de las poblaciones
-                        vulnerables. Algunas de las áreas clave incluyen:
-                        <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png"
-                            alt="Resumen visual de las áreas de trabajo">
-                    </p>
-                </li>
-            </section>
-        </ol>
-    </main>
-    <footer>
+                <!-- Ejemplo de tarjeta para imagen -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png" class="card-img-top" alt="Áreas de trabajo">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="TablaInfo" class="mb-5">
+            <h2 class="text-center">Resumen Institucional</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover mt-3">
+                    <thead class="table-primary">
+                        <tr><th>Área</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Médica</td><td>Atención de emergencias</td></tr>
+                        <tr><td>Logística</td><td>Suministro y soporte</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="Contacto" class="bg-light p-4 rounded border">
+            <h2 class="text-center">Contáctanos</h2>
+            <form class="row g-3">
+                <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre"></div>
+                <div class="col-md-6"><input type="email" class="form-control" placeholder="Email"></div>
+                <div class="col-12"><button type="submit" class="btn btn-primary">Enviar</button></div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2026 Médicos Sin Fronteras</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

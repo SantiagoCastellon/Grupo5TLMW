@@ -11,8 +11,8 @@
 
 :root {
     --color-primario: #c90e0e;    
-    --color-secundario: #1A2B4A;  
-    --color-acento: #FFB400;      
+    --color-secundario: #7e0909;  
+    --color-acento: #ff1100;      
     --color-fondo: #808080;       
     --color-texto: #1A1A1A;       
     --fuente-principal: 'Roboto', sans-serif;
@@ -157,3 +157,16 @@ p, ol, ul{
 }
 
 
+/* Bootstrap - personalizaciones del integrante 2*/
+.btn-ong {
+    background-color: var(--color-principal, #750606); /* Color rojo oscuro de ejemplo */
+    color: white; /* Color del texto */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por encima (hover) */
+.btn-ong:hover {
+    background-color: #a81c1c; /* Un rojo más oscuro para el hover */
+    color: white;
+}
