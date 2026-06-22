@@ -132,7 +132,7 @@ section, article, aside {
 
 .Programas-Iniciativas {
     /*Integrantes 3. Color.*/
-    background-color: var(--color-fondo);
+    background-color: white;
     color: var(--color-texto);
 }
 .card {
