@@ -1,33 +1,62 @@
-<!DOCTYPE html> 
-<html lang="es"> 
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport"  content="width=device-width"> 
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
     <title>Programa/Iniciativas</title>
 </head>
-
 <body>
-   
     <header>
-        <h1>Medicos sin fronteras AR</h1>
+        <div class="barra-de-navegacion">
+            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" navbar-expand-lg
+                bg-body-tertiary">
+                <div class="container-fluid">
+                    <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
+                    <a class="navbar-brand" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">
+                        Medicos sin fronteras AR
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="programas.html">Programas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--
+        <h1 id="heading_de_archivo_Programas_Iniciativas">Medicos sin fronteras AR</h1>
         <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
-        
         <nav id="Volver_inicio_del_SitioWeb">
             <a href="index.html">Volver a inicio.</a>
         </nav>
+        -->
     </header>
 
     <main>
         <section class="Programas-Iniciativas">
-            <h2>Programas/Iniciativas:</h2>
+            <h2 class="titulo_2__de_pagina_Programas_Iniciativas">Programas/Iniciativas:</h2>
 
-            <section class="card">
-                <h3>Atención de emergencias y conflictos armados.</h3>
+            <section class="Atencion_deEmergencias_y_conflictosArmados">
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas">Atención de emergencias y conflictos armados.</h3>
                     <ul>
                         <li> <strong> <em>¿De qué se trata?</em></strong>: Equipos médicos de respuesta rápida en guerras, desastres naturales y <a href="#definicion_epidemia">epidemias</a>. Cirugías de guerra, hospitales de campaña, atención a heridos y desplazados.</li>
 
@@ -37,8 +66,8 @@
                     </ul>
             </section>
 
-            <section class="card">
-                <h3><strong>Tratamiento de desnutrición infantil.</strong></h3>
+            <section class="Desnutricion_infantil">
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas"><strong>Tratamiento de desnutrición infantil.</strong></h3>
                     <ul>
                         <li><strong><em>¿De qué se trata?</em></strong> : Centros de nutrición terapéutica para chicos con desnutrición aguda severa. Usan alimento terapéutico listo para usar y seguimiento médico.</li>
 
@@ -52,8 +81,8 @@
                     </ul>
             </section>
 
-            <section class="card">
-                <h3><strong>Campaña de Acceso a Medicamentos.</strong></h3>
+            <section class="Acceso_medicamentos">
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas"><strong>Campaña de Acceso a Medicamentos.</strong></h3>
                     <ul>
                         <li><strong><em>¿De qué se trata?</em></strong> : Presio diplomatica a gobiernos y farmacéuticas para bajar precios de vacunas, <a href="def_VIH">VIH</a> , <a href="#def_tuberculosis">tuberculosis</a> y <a href="def_hepatitisC">hepatitis C</a>. También investigamos y desarrollamos tratamientos para enfermedades olvidadas como <a href="def_chagas">Chagas</a> o <a href="def_kalas-azar">kala-azar</a>.</li>
 
@@ -70,7 +99,7 @@
             </section>
 
             <article class="DefinicionDe_enfermedades">
-                <h3>Definiciones de enfermedades:</h3>
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas">Definiciones de enfermedades:</h3>
                     <p>Para mas información sobre estas enfermedades, visite: <a href="https://medlineplus.gov/spanish/encyclopedia.hmtl" target="_blank" rel="noopener noreferrer">MedlinePlus. </a> </p>
                     <dl>
                         <dt class="definicion_epidemia">Epidemia:</dt>
@@ -104,8 +133,5 @@
    <footer>
        <a href="contacto.html">Contacto</a>
    </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
