@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8"> 
+    <meta name="viewport"  content="width=device-width"> 
+    
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Programas e Iniciativas - MSF</title>
+    <title>Programa/Iniciativas</title>
 </head>
 <body>
-
     <header>
         <div class="barra-de-navegacion">
-            <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary shadow-sm" data-bs-theme="dark">
+            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" navbar-expand-lg
+                bg-body-tertiary">
                 <div class="container-fluid">
-                    <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras" width="50">
-                    <a class="navbar-brand ms-2" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
+                    <a class="navbar-brand" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">
                         Medicos sin fronteras AR
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,77 +22,116 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="programas.html">Programas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-    <main class="container my-5">
-        <h1 class="text-center mb-5">Programas e Iniciativas</h1>
+        <!--
+        <h1 id="heading_de_archivo_Programas_Iniciativas">Medicos sin fronteras AR</h1>
+        <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
+        <nav id="Volver_inicio_del_SitioWeb">
+            <a href="index.html">Volver a inicio.</a>
+        </nav>
+        -->
+    </header>
 
-        <!-- Sección de Tarjetas -->
-        <section class="row g-4 mb-5">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://msf.mx/wp-content/uploads/2025/12/MSF30248_content-1024x576.webp" class="card-img-top" alt="Emergencias">
-                    <div class="card-body">
-                        <h5>Atención de emergencias</h5>
-                        <p>Respuesta rápida en guerras y desastres naturales.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://gdb.voanews.com/09320000-0a00-0242-25a2-08db0211250d_cx0_cy10_cw0_w1023_r1_s.jpg" class="card-img-top" alt="Desnutrición">
-                    <div class="card-body">
-                        <h5>Desnutrición infantil</h5>
-                        <p>Centros de nutrición terapéutica y seguimiento médico.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://saludeverywhere.com/wp-content/uploads/2024/07/MDM-GR-0134-e1721858497614-1024x608.jpg.webp" class="card-img-top" alt="Medicamentos">
-                    <div class="card-body">
-                        <h5>Acceso a medicamentos</h5>
-                        <p>Incidencia para bajar precios de tratamientos y vacunas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main>
+        <section class="Programas-Iniciativas">
+            <h2 class="titulo_2__de_pagina_Programas_Iniciativas">Programas/Iniciativas:</h2>
 
-        <!-- Tabla de Definiciones -->
-        <section class="mb-5">
-            <h2 class="text-center mb-4">Definiciones de enfermedades</h2>
-            <div class="table-responsive">
-                <table class="table table-striped table-bordered align-middle">
-                    <thead class="table-dark">
-                        <tr><th>Concepto</th><th>Descripción</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Epidemia</td><td>Enfermedad que ataca a gran número de personas.</td></tr>
-                        <tr><td>VIH</td><td>Virus que ataca el sistema inmunitario.</td></tr>
-                        <tr><td>Tuberculosis</td><td>Bacteria que afecta principalmente pulmones.</td></tr>
-                        <tr><td>Hepatitis C</td><td>Inflamación del hígado.</td></tr>
-                        <tr><td>Chagas</td><td>Infección por el parásito Trypanosoma cruzi.</td></tr>
-                        <tr><td>Kala-azar</td><td>Infección por picadura de mosquito.</td></tr>
-                    </tbody>
-                </table>
-            </div>
+            <section class="Atencion_deEmergencias_y_conflictosArmados">
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas">Atención de emergencias y conflictos armados.</h3>
+                    <ul>
+                        <li> <strong> <em>¿De qué se trata?</em></strong>: Equipos médicos de respuesta rápida en guerras, desastres naturales y <a href="#definicion_epidemia">epidemias</a>. Cirugías de guerra, hospitales de campaña, atención a heridos y desplazados.</li>
+
+                        <li> <strong><em>¿A quién está dirigido?</em></strong> : Poblaciones civiles atrapadas en crisis humanitarias donde el sistema de salud colapsó. Ejemplo: Gaza, Sudán, Ucrania, campos de refugiados. O puedes trabajar con nosotros. Si sos profesional de salud, logística, agua/saneamiento o administración. Requiere experiencia, disponibilidad de 6-12 meses e idiomas. Postulate en la web de MSF Argentina.</li> 
+
+                        <li><strong><em>¿Cómo participar?</em></strong>  : Pueder aportar mensual o único en http://msf.org.ar. MSF se financia 97% con donantes privados para ser independiente.</li>
+                    </ul>
+            </section>
+
+            <section class="Desnutricion_infantil">
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas"><strong>Tratamiento de desnutrición infantil.</strong></h3>
+                    <ul>
+                        <li><strong><em>¿De qué se trata?</em></strong> : Centros de nutrición terapéutica para chicos con desnutrición aguda severa. Usan alimento terapéutico listo para usar y seguimiento médico.</li>
+
+                        <li><strong><em>¿A quién está dirigido?</em> </strong> : Niños menores de 5 años en países con crisis alimentarias.</li>
+
+                        <li><strong><em>¿Cómo participar?</em></strong> : 
+                            <ol>
+                                 <li>Con donación mensual ayudás a comprar los sobres de alimento terapéutico.</li>
+                                 <li>O difundiendo: Ser voluntario en eventos, charlas en universidades o colegios. Anotate en http://msf.org.ar/voluntariado.</li>
+                            </ol>         
+                    </ul>
+            </section>
+
+            <section class="Acceso_medicamentos">
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas"><strong>Campaña de Acceso a Medicamentos.</strong></h3>
+                    <ul>
+                        <li><strong><em>¿De qué se trata?</em></strong> : Presio diplomatica a gobiernos y farmacéuticas para bajar precios de vacunas, <a href="def_VIH">VIH</a> , <a href="#def_tuberculosis">tuberculosis</a> y <a href="def_hepatitisC">hepatitis C</a>. También investigamos y desarrollamos tratamientos para enfermedades olvidadas como <a href="def_chagas">Chagas</a> o <a href="def_kalas-azar">kala-azar</a>.</li>
+
+                        <li><strong><em>¿A quién está dirigido?</em> </strong> : Pacientes de países de bajos ingresos que no pueden pagar tratamientos caros.</li>
+
+                        <li><strong> <em>¿Cómo participar?</em> </strong>: 
+                            <ol>
+                                <li>Firmando peticiones en campañas puntuales desde la web o redes de MSF.</li>
+                                <li>Donación de fondos específicos para investigación de enfermedades olvidadas.</li>
+                                <li>Ser activista digital*: Compartir informes y sumarte a acciones de incidencia.</li>
+                            </ol>  
+                        </li>
+                    </ul>  
+            </section>
+
+            <article class="DefinicionDe_enfermedades">
+                <h3 class="titulo_3__de_pagina_Programas_Iniciativas">Definiciones de enfermedades:</h3>
+                    <p>Para mas información sobre estas enfermedades, visite: <a href="https://medlineplus.gov/spanish/encyclopedia.hmtl" target="_blank" rel="noopener noreferrer">MedlinePlus. </a> </p>
+                    <dl>
+                        <dt class="definicion_epidemia">Epidemia:</dt>
+                            <dd>Enfermedad infecciosa que durante un periodo de teimpo ataca, simultáneamente y en un mismo territorio, a gran número de personas.</dd>
+
+                        <dt class="def_VIH">VIH:</dt>
+                            <dd>Virus que ataca y destruye las células del sistema inmunitario, específicamente los linfocitos CD4, debilitando las defensas del cuerpo contra infecciones y cánceres. </dd>
+
+                        <dt class="def_tuberculosis">Tuberculosis: </dt>
+                            <dd>Enfermedad infecciosa y contagiosa porducida por la bacteria Mycobacterium. Afecta principalmente a los pulpones, aunque puede dañar otros órganos como riñones, columna o cerebro.</dd>
+
+                         <dt class="def_hepatitisC">Hepatitis C:</dt>
+                            <dd>Inflamación del hígado, un órgano vital que procesa nutrientes, filtra la sangre y combate infecciones. </dd>
+
+                        <dt class="def_chagas">Chagas:</dt>
+                            <dd>Infección parasitaria causada por el protozoo Trypanosama cuzzi. Se transmite por la cinchuca y afecta a 6 millones de latinoamericanos.</dd>
+
+                        <dt class="def_kalas-azar">Kalas-azar:</dt>
+                            <dd>Infección parasitaria causada por la picadura de cierto tipo de mosquito de la arena.</dd>
+                    </dl>
+            </article>      
         </section>
     </main>
+    
+    <aside>
+       <img src="https://msf.mx/wp-content/uploads/2025/12/MSF30248_content-1024x576.webp" alt="Atencion_medica_en_conflitos_armados" width="400" height="200">
+       <img src="https://gdb.voanews.com/09320000-0a00-0242-25a2-08db0211250d_cx0_cy10_cw0_w1023_r1_s.jpg" alt="Desnutricion_infantil" width="400" height="200">
+       <img src="https://saludeverywhere.com/wp-content/uploads/2024/07/MDM-GR-0134-e1721858497614-1024x608.jpg.webp" alt="Acceso_medicamentos" width="400" height="200">
+    </aside>
 
-    <footer class="text-center py-4 bg-dark text-white">
-        <a href="contacto.html" class="text-white">Contacto</a>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <footer>
+       <a href="contacto.html">Contacto</a>
+   </footer>
 </body>
 </html>
