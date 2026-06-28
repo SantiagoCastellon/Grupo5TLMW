@@ -47,6 +47,12 @@ header {
     padding: 2rem;
     text-align: center;
     border-bottom: 4px solid var(--main-color-acento);
+
+    /*Integrante 3: Espaciado y box model. Flexbox.*/
+    display:flex;
+    align-items:center; /*Centra verticalmente. */
+    justify-content:center; /*Centra horizontalmente. */
+    gap:20px; /*Espacio entre logo y texto.*/
 }
 
 header h1, img { /* Integrante 2: Header */
@@ -98,6 +104,11 @@ footer {
     padding: 2rem;
     text-align: center;
     margin-top: 3rem;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
 }
 
 footer a { /* Integrante 2: Footer */
@@ -130,18 +141,28 @@ section, article, aside {
     padding: 0 1rem;
     flex-wrap:wrap;
     gap:1.5rem;
+    justify-content:center;
 }
 
 .Programas-Iniciativas {
     /*Integrantes 3. Color.*/
     background-color: white;
     color: var(--color-texto);
+
+    /*Integrantes 3. Espaciado y box model.*/
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
 }
 .card {
     /*Integrante 3: Espaciado y box model.*/
+    flex:1 1 350px;
     padding:1.5rem;
     border:2px solid var(--color-primario);
     border-radius:8px;
+
+    display: flex;
 }
 
 h1{
@@ -165,11 +186,6 @@ p, ol, ul{
     /*Integrantes 3. Espaciado y box model. */
 	margin: 0 auto;
     padding: 0 1rem;
-}
-
-aside, img {
-    /*Integrantes 3. Flexbox.*/
-    display: flex;
 }
 
 
