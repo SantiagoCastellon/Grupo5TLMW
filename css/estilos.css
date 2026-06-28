@@ -257,6 +257,30 @@ p, ol, ul{
 }
 
 
+/*Para la función de javascript del boton oscuro: al dar clik, todo la pagina entra en modo oscuro.*/
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .form-control {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #bbb;
+}
+
+
+
+
 
 /* Integrante 4: Personalización Bootstrap */
 
