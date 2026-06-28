@@ -5,7 +5,9 @@
     <meta charset="UTF-8"> 
     <meta name="viewport"  content="width=device-width"> 
     
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
 
     <title>Programa/Iniciativas</title>
@@ -13,16 +15,61 @@
 
 <body>
    
-    <header>
-        <h1>Medicos sin fronteras AR</h1>
-        <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
-        
-        <nav id="Volver_inicio_del_SitioWeb">
-            <a href="index.html">Volver a inicio.</a>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
 
-    <main>
+            <img src="imagenes/msf_logo.svg" alt="Logo MSF" width="40">
+
+            <a class="navbar-brand ms-2" href="index.html">
+                Medicos sin fronteras AR
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="programas.html">
+                            Programas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+    
+   <!-- container = centra el contenido y limita el ancho; my-5 = margen vertical (arriba y abajo). -->
+    <main class="container my-5">
         <section class="Programas-Iniciativas">
             <h2>Programas/Iniciativas:</h2>
 
@@ -55,7 +102,7 @@
             <section class="card">
                 <h3><strong>Campaña de Acceso a Medicamentos.</strong></h3>
                     <ul>
-                        <li><strong><em>¿De qué se trata?</em></strong> : Presio diplomatica a gobiernos y farmacéuticas para bajar precios de vacunas, <a href="def_VIH">VIH</a> , <a href="#def_tuberculosis">tuberculosis</a> y <a href="def_hepatitisC">hepatitis C</a>. También investigamos y desarrollamos tratamientos para enfermedades olvidadas como <a href="def_chagas">Chagas</a> o <a href="def_kalas-azar">kala-azar</a>.</li>
+                        <li><strong><em>¿De qué se trata?</em></strong> : Presio diplomatica a gobiernos y farmacéuticas para bajar precios de vacunas, <a href="#def_VIH">VIH</a> , <a href="#def_tuberculosis">tuberculosis</a> y <a href="#def_hepatitisC">hepatitis C</a>. También investigamos y desarrollamos tratamientos para enfermedades olvidadas como <a href="#def_chagas">Chagas</a> o <a href="#def_kalas-azar">kala-azar</a>.</li>
 
                         <li><strong><em>¿A quién está dirigido?</em> </strong> : Pacientes de países de bajos ingresos que no pueden pagar tratamientos caros.</li>
 
@@ -73,22 +120,23 @@
                 <h3>Definiciones de enfermedades:</h3>
                     <p>Para mas información sobre estas enfermedades, visite: <a href="https://medlineplus.gov/spanish/encyclopedia.hmtl" target="_blank" rel="noopener noreferrer">MedlinePlus. </a> </p>
                     <dl>
-                        <dt class="definicion_epidemia">Epidemia:</dt>
+                        <!--Para que un link rediriga a la misma pagina (enlace interno o ancla), debes marcarla antes con id="#palabra" dentro de <a>. -->
+                        <dt id="definicion_epidemia">Epidemia:</dt>
                             <dd>Enfermedad infecciosa que durante un periodo de teimpo ataca, simultáneamente y en un mismo territorio, a gran número de personas.</dd>
 
-                        <dt class="def_VIH">VIH:</dt>
+                        <dt id="def_VIH">VIH:</dt>
                             <dd>Virus que ataca y destruye las células del sistema inmunitario, específicamente los linfocitos CD4, debilitando las defensas del cuerpo contra infecciones y cánceres. </dd>
 
-                        <dt class="def_tuberculosis">Tuberculosis: </dt>
+                        <dt id="def_tuberculosis">Tuberculosis: </dt>
                             <dd>Enfermedad infecciosa y contagiosa porducida por la bacteria Mycobacterium. Afecta principalmente a los pulpones, aunque puede dañar otros órganos como riñones, columna o cerebro.</dd>
 
-                         <dt class="def_hepatitisC">Hepatitis C:</dt>
+                         <dt id="def_hepatitisC">Hepatitis C:</dt>
                             <dd>Inflamación del hígado, un órgano vital que procesa nutrientes, filtra la sangre y combate infecciones. </dd>
 
-                        <dt class="def_chagas">Chagas:</dt>
+                        <dt id="def_chagas">Chagas:</dt>
                             <dd>Infección parasitaria causada por el protozoo Trypanosama cuzzi. Se transmite por la cinchuca y afecta a 6 millones de latinoamericanos.</dd>
 
-                        <dt class="def_kalas-azar">Kalas-azar:</dt>
+                        <dt id="def_kalas-azar">Kalas-azar:</dt>
                             <dd>Infección parasitaria causada por la picadura de cierto tipo de mosquito de la arena.</dd>
                     </dl>
             </article>      
@@ -96,9 +144,20 @@
     </main>
     
     <aside>
-       <img src="https://msf.mx/wp-content/uploads/2025/12/MSF30248_content-1024x576.webp" alt="Atencion_medica_en_conflitos_armados" width="400" height="200">
-       <img src="https://gdb.voanews.com/09320000-0a00-0242-25a2-08db0211250d_cx0_cy10_cw0_w1023_r1_s.jpg" alt="Desnutricion_infantil" width="400" height="200">
-       <img src="https://saludeverywhere.com/wp-content/uploads/2024/07/MDM-GR-0134-e1721858497614-1024x608.jpg.webp" alt="Acceso_medicamentos" width="400" height="200">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://msf.mx/wp-content/uploads/2025/12/MSF30248_content-1024x576.webp" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://gdb.voanews.com/09320000-0a00-0242-25a2-08db0211250d_cx0_cy10_cw0_w1023_r1_s.jpg" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://saludeverywhere.com/wp-content/uploads/2024/07/MDM-GR-0134-e1721858497614-1024x608.jpg.webp" class="img-fluid rounded shadow-sm"> 
+                </div>
+            </div>
+            
+        </div>   
     </aside>
 
    <footer>
@@ -107,5 +166,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
