@@ -1,121 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width">
-        <!--Bootstrap CSS-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!--CSS Propio-->
-        <link rel="stylesheet" href="css/estilos.css">
-        <title>Inicio MSF</title>
-    </head>
-    <body>
-        <header>
-            
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <h2 class="navbar-brand d-flex align-items-center">
-                        <img src="imagenes/msf_logo.svg" alt="Logo de Médicos Sin Fronteras" width="40" height="40" class="d-inline-block align-text-top me-2">
-                        <span>Médicos Sin Fronteras AR</span>
-                    </h2>
-                    <!-- 
-                      CAMBIO 1: Se agregó el botón hamburguesa (navbar-toggler).
-                      Este botón solo es visible en pantallas chicas (mobile/tablet). 
-                      El atributo 'data-bs-target="#navbarNav"' es clave, ya que le dice a Bootstrap qué elemento debe abrir/cerrar.
-                    -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- 
-                      CAMBIO 2: Se creó este <div> contenedor con las clases 'collapse navbar-collapse' e id 'navbarNav'.
-                      En el commit anterior, la lista <ul> estaba suelta. Ahora, al envolverla en este <div>, logramos que se oculte 
-                      en pantallas chicas y se transforme en el menú desplegable. El id debe coincidir con el 'data-bs-target' del botón.
-                    -->
-                    <div class="collapse navbar-collapse" id="navbarNav"></div>
-                        <ul class="navbar-nav ms-auto">
-                            <!-- 
-                              CAMBIO 3: Se optimizaron los textos de los enlaces del menú del paso 2.
-                              Se acortaron etiquetas largas (ej. "Ver Áreas de Trabajo" a "Áreas de Trabajo") 
-                              para mejorar la legibilidad y evitar que el menú se desborde en tablets o pantallas medianas.
-                            -->
-                            <li class="nav-item"><a class="nav-link" href="#PresentacionONG">Quiénes somos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#MisionONG">Qué hacemos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#ResumenAreasDeTrabajo">Áreas de Trabajo</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contactos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="nosotros.html">Saber más</a></li>
-                            <!-- 
-                              CAMBIO 4: Se transformó el último enlace en un botón destacado usando clases de Bootstrap 
-                              (btn btn-outline-light btn-sm). Además se agregaron clases de margen responsivo (ms-lg-2 mt-2 mt-lg-0) 
-                              para que se separe correctamente de los otros links tanto en vertical (mobile) como en horizontal (desktop).
-                            -->
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-outline-light btn-sm ms-lg-2 mt-2 mt-lg-0" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">Sitio oficial</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio MSF</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <img src="imagenes/msf_logo.svg" alt="Logo MSF" width="40">
+                <a class="navbar-brand ms-2" href="#">Medicos sin fronteras AR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Navegación
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#PresentacionONG">Quienes somos</a></li>
+                                    <li><a class="dropdown-item" href="#MisionONG">Que hacemos</a></li>
+                                    <li><a class="dropdown-item" href="#ResumenAreasDeTrabajo">Ver Areas de Trabajo</a>
+                                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor General con ancho máximo -->
+    <main class="container my-5">
+        
+        <h1 class="text-center mb-5">Medicos sin fronteras AR</h1>
+
+        <section id="PresentacionONG" class="mb-5">
+            <div class="card p-4 shadow-sm">
+                <h2 class="text-center">Presentación de la ONG</h2>
+                <p>Médicos Sin Fronteras (MSF) es una organización <strong>médico-humanitaria</strong> que brinda ayuda a víctimas de catástrofes y conflictos.</p>
+            </div>
+        </section>
+
+        <section id="MisionONG" class="mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-4 h-100 shadow-sm">
+                        <h2 class="text-danger">Misión</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Acción Médica:</strong> Salvar vidas en crisis agudas.</li>
+                            <li class="list-group-item"><strong>Testimonio:</strong> Denunciar injusticias.</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- 
-          CAMBIO 5: Se añadieron clases de maquetación de Bootstrap al <main> (container mt-4) 
-          y a la lista ordenada (list-unstyled) para centrar el contenido de la página con márgenes limpios 
-          y remover los números por defecto de la lista, dándole un aspecto más moderno a las secciones.
-        -->
-        <main class="container mt-4">
-            <h1>Medicos sin fronteras AR</h1>
-            <ol class="list-unstyled">
-                <!-- Se agregó la clase mb-4 a las secciones para darles una separación uniforme en el flujo vertical -->
-                <section id="PresentacionONG" class="mb-4">
-                    <li>
-                        <h2>
-                            Presentación de la ONG
-                        </h2>
-                        <p>
-                            Médicos Sin Fronteras (MSF) es una organización <strong>médico-humanitaria de carácter internacional</strong> que aporta su ayuda a poblaciones en situación precaria y a víctimas de catástrofes de origen natural o humano y de conflictos armados, sin ninguna discriminación por raza, religión o ideología política.
-                            Fundada en 1971, cuenta con miles de profesionales de la salud, especialistas en logística y personal administrativo que trabajan en más de 70 países. Su labor fue reconocida con el <strong>Premio Nobel de la Paz en 1999.</strong>
-                        </p>
-                    </li>
-                </section>
-                <section id="MisionONG" class="mb-4">
-                    <li>
-                        <h2>
-                            Misión de la ONG
-                        </h2>
-                        <p>
-                            La misión de MSF se sustenta en dos pilares fundamentales:
-                            <!-- Se añadió un pequeño margen superior (mt-2) a la lista interna -->
-                            <ul class="mt-2">
-                                <li><strong>Acción Médica:</strong> Salvar vidas y aliviar el sufrimiento mediante la atención médica directa en crisis agudas.</li>
-                                <li><strong>Testimonio (Témoignage):</strong> Como organización independiente, MSF se reserva el derecho de denunciar públicamente las violaciones de derechos humanos y las injusticias que presencia en el terreno, buscando atraer la atención sobre crisis olvidadas.</li>
-                            </ul>
-                        </p>
-                    </li>
-                </section>
-                <section id="ResumenAreasDeTrabajo" class="mb-4">
-                    <li>
-                        <h2>
-                            Resumen de las áreas de trabajo
-                        </h2>
-                        <p>
-                            MSF trabaja en una amplia gama de áreas para abordar las necesidades de las poblaciones vulnerables. Algunas de las áreas clave incluyen:
-                        </p>
-                        <!-- 
-                        CAMBIO 6: Se envolvió la imagen en un contenedor centrado (text-center mt-3) 
-                        y se le aplicó la clase 'img-fluid' junto con 'rounded'. Esto garantiza que la imagen 
-                        se encoja correctamente en pantallas de celulares sin desbordar el ancho de la pantalla.
-                        -->
-                        <div class="text-center mt-3">
-                            <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png" class="img-fluid rounded" alt="Resumen visual de las áreas de trabajo">
-                        </div>
-                    </li>
-                </section>
-            </ol>
-        </main>
-        <footer>
-            
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+                <!-- Ejemplo de tarjeta para imagen -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png" class="card-img-top" alt="Áreas de trabajo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="TablaInfo" class="mb-5">
+            <h2 class="text-center">Resumen Institucional</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover mt-3">
+                    <thead class="table-primary">
+                        <tr><th>Área</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Médica</td><td>Atención de emergencias</td></tr>
+                        <tr><td>Logística</td><td>Suministro y soporte</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="Contacto" class="bg-light p-4 rounded border">
+            <h2 class="text-center">Contáctanos</h2>
+            <form class="row g-3">
+                <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre"></div>
+                <div class="col-md-6"><input type="email" class="form-control" placeholder="Email"></div>
+                <div class="col-12"><button type="submit" class="btn btn-primary">Enviar</button></div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2026 Médicos Sin Fronteras</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

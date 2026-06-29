@@ -2,74 +2,197 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - Medicos Sin Fronteras</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="bg-light"> 
 
     <header>
-        <h1>Medicos Sin Fronteras</h1>
-        <nav>
-            <p>Atención médica-humanitaria donde más se necesita.</p>
-        </nav>
+        <div class="barra-de-navegacion">
+            <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary shadow-sm" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras" width="50">
+                    <a class="navbar-brand ms-2" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">
+                        Medicos sin fronteras AR
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+       
+        <div class="container mt-5 text-center">
+            <h1 class="display-4 fw-bold text-danger">Médicos Sin Fronteras</h1>
+            <p class="lead text-muted">Atención médica-humanitaria donde más se necesita.</p>
+        </div>
     </header>
 
-    <hr>
+    <hr class="container my-4">
 
-    <section>
-        <h2>Nuestra Historia</h2>
-        <article>
-            <p>
-                Medicos Sin Fronteras nació en 1971, tras la iniciativa de un grupo de médicos y enfermeros 
-                que buscaban brindar asistencia en zonas rurales aisladas de difícil acceso. <br>Lo que comenzó 
-                como una pequeña unidad móvil en el norte del país, se transformó en una red de respuesta 
-                rápida ante emergencias climáticas y crisis sanitarias a nivel internacional.
-            </p>
-            <p>
-                A lo largo de estos años, hemos atendido a más de 50.000 pacientes, estableciendo centros 
-                de salud permanentes en comunidades que antes debían viajar días para recibir una vacuna 
-                o un control básico.
-            </p>
-        </article>
-    </section>
+    
+    <main class="container container-md bg-white p-5 rounded shadow-sm mb-5">
 
-    <section>
-        <h2>Nuestros Valores</h2>
-        <ul>
-            <li><strong>Humanidad:</strong> Nuestra prioridad es el alivio del sufrimiento humano.</li>
-            <li><strong>Imparcialidad:</strong> Brindamos ayuda sin distinción de raza, religión o ideología.</li>
-            <li><strong>Transparencia:</strong> Gestión clara y pública de los recursos donados.</li>
-            <li><strong>Compromiso:</strong> Permanecemos en el territorio incluso después de que las cámaras se van.</li>
-        </ul>
-    </section>
+        
+        <section class="mb-5 text-center">
+            <h2 class="mb-4 text-danger">Nuestra Historia</h2>
+            <div class="row align-items-center text-start">
+                <div class="col-12 col-lg-7">
+                    <p>
+                        Médicos Sin Fronteras nació en 1971, tras la iniciativa de un grupo de médicos y enfermeros 
+                        que buscaban brindar asistencia en zonas rurales aisladas de difícil acceso. Lo que comenzó 
+                        como una pequeña unidad móvil, se transformó en una red de respuesta rápida ante emergencias.
+                    </p>
+                    <p>
+                        A lo largo de estos años, hemos atendido a más de 50.000 pacientes, estableciendo centros 
+                        de salud en comunidades vulnerables.
+                    </p>
+                </div>
+                
+                <div class="col-12 col-lg-5 mt-4 mt-lg-0">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img src="imagenes/historia1.jpg" class="img-fluid rounded shadow-sm" alt="Atención médica en 1971">
+                        </div>
+                        <div class="col-6">
+                            <img src="imagenes/historia2.jpg" class="img-fluid rounded shadow-sm" alt="Equipo médico actual">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Nuestro Equipo</h2>
-        <p>Contamos con profesionales apasionados por la medicina social:</p>
-        <ul>
-            <li><strong>Dra. Elena Martínez:</strong> Directora Médica y fundadora.</li>
-            <li><strong>Lic. Julián Sosa:</strong> Coordinador de Logística en Terreno.</li>
-            <li><strong>Dr. Ricardo Gómez:</strong> Jefe de Urgencias y Pediatría.</li>
-            <li><strong>Enf. Marina López:</strong> Responsable de Capacitación Comunitaria.</li>
-        </ul>
-    </section>
+        
+        <section class="mb-5 text-center">
+            <h2 class="mb-4 text-danger">Nuestros Valores</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="p-4 border border-danger rounded bg-light h-100 shadow-sm">
+                        <h5 class="text-danger">Humanidad</h5>
+                        <p class="small mb-0">Prioridad en el alivio del sufrimiento humano.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="p-4 border border-danger rounded bg-light h-100 shadow-sm">
+                        <h5 class="text-danger">Imparcialidad</h5>
+                        <p class="small mb-0">Ayuda sin distinción de raza o religión.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="p-4 border border-danger rounded bg-light h-100 shadow-sm">
+                        <h5 class="text-danger">Transparencia</h5>
+                        <p class="small mb-0">Gestión clara de los recursos donados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Información Institucional</h2>
-        <dl>
-            <dt>Sede Central</dt>
-            <dd>Av. de la Solidaridad 1234, Ciudad Autónoma de Buenos Aires.</dd>
+        
+        <section class="mb-5">
+            <h2 class="mb-4 text-center text-danger">Nuestros Programas</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Atención Pediátrica</h5>
+                            <p class="card-text text-muted">Campañas de vacunación y nutrición infantil en zonas de riesgo.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Respuesta a Desastres</h5>
+                            <p class="card-text text-muted">Despliegue rápido de hospitales de campaña ante terremotos y huracanes.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Salud Materna</h5>
+                            <p class="card-text text-muted">Asistencia en partos y control prenatal en comunidades aisladas.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <dt>CUIT</dt>
-            <dd>30-71234567-8</dd>
+       
+        <section class="mb-5">
+            <h2 class="mb-4 text-center text-danger">Información Institucional</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover border-secondary text-center align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Dato Institucional</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Sede Central</td>
+                            <td>Av. de la Solidaridad 1234, CABA</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">CUIT</td>
+                            <td>30-71234567-8</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Personería Jurídica</td>
+                            <td>Resolución IGJ N° 456/2012</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            <dt>Personería Jurídica</dt>
-            <dd>Resolución IGJ N° 456/2012</dd>
+       
+        <section class="mb-4 bg-light p-4 rounded border">
+            <h2 class="mb-4 text-center text-danger">Sumate como Voluntario</h2>
+            <form class="row g-3 mx-auto" style="max-width: 600px;">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label fw-bold">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label fw-bold">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label fw-bold">¿Por qué quieres unirte?</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    
+                    <button type="submit" class="btn btn-danger btn-lg px-5">Enviar Solicitud</button>
+                </div>
+            </form>
+        </section>
 
-           
-        </dl>
-    <a href="index.html">Volver al inicio</a>
+    </main>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

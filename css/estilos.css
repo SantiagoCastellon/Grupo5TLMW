@@ -10,13 +10,12 @@
 /*Integrante 2: Header, navegación (incluyendo :hover) y footer.*/
 
 :root {
-    /*Integrante 1: Variables CSS*/
     --color-primario: #c90e0e;    
-    --color-secundario: #1A2B4A;  
-    --color-acento: #FFB400;      
-    --color-fondo: #e0dcdc;       
+    --color-secundario: #7e0909;  
+    --color-acento: #ff1100;      
+    --color-fondo: #808080;       
     --color-texto: #1A1A1A;       
-    --fuente-principal: 'Oswald', sans-serif; /*Integrante 1: Tipografia general*/
+    --fuente-principal: 'Roboto', sans-serif;
 }
 
 
@@ -29,28 +28,39 @@
     padding: 0;
 }
 
-body { 
-    font-family: var(--fuente-principal); /*Integrante 1: Tipografia general y estilos del body*/
-    font-size: 16px; /*Integrante 1: Tipografia general y estilos del body*/
-    line-height: 1.6; /*Integrante 1: Tipografia general y estilos del body*/
-    max-width: 1100px; /*Integrante 1: Estilos del body*/
-    margin: 0 auto; /*Integrante 1: Estilos del body*/
-    padding: 0 1rem; /*Integrante 1: Estilos del body*/
-    background-color: var(--color-fondo); /*Integrante 1: Estilos del body*/
-    color: var(--color-texto); /*Integrante 1: Tipografia general y estilos del body*/
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+    
+    /*Elimine el max-widt para agrandar la pagina.*/
+
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
-header { /* Integrante 2: Header */
+header {
     background-color: var(--color-primario);
     color: #ffffff;
     padding: 2rem;
     text-align: center;
-    border-bottom: 4px solid var(--color-acento);
+    border-bottom: 4px solid var(--main-color-acento);
+
+    /*Integrante 3: Espaciado y box model. Flexbox.*/
+    display:flex;
+    align-items:center; /*Centra verticalmente. */
+    justify-content:center; /*Centra horizontalmente. */
+    gap:20px; /*Espacio entre logo y texto.*/
 }
 
-header h1 { /* Integrante 2: Header */
+header h1, img { /* Integrante 2: Header */
     font-size: 2.5rem;
     margin-bottom: 1rem;
+
+    /*Integrante 3: Espaciado y box model. Flexbox.*/
+    display: flex;
 }
 
 nav { /* Integrante 2: Navegación (incluyendo :hover) */
@@ -77,20 +87,28 @@ nav a { /* Integrante 2: Navegación (incluyendo :hover) */
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
     display: inline-block; 
+
+    /*Integrante 3: Espaciado y box model.*/
+    display: flex;
 }
 
 
-nav a:hover { /* Integrante 2: Navegación (incluyendo :hover) */
+nav a:hover {
     background-color: var(--color-acento);
     border-radius: 4px;
 }
 
-footer { /* Integrante 2: Footer */
+footer {
     background-color: var(--color-secundario);
     color: #ffffff;
     padding: 2rem;
     text-align: center;
     margin-top: 3rem;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
 }
 
 footer a { /* Integrante 2: Footer */
@@ -101,10 +119,9 @@ footer a { /* Integrante 2: Footer */
     font-weight: 700;
 }
 
-footer a:hover { /* Integrante 2: Footer */
+footer a:hover {
     color: var(--color-acento);
 }
-/*Fin de código escrito por Integrante 2.*/
 
 
 main {
@@ -120,14 +137,32 @@ main {
 
 section, article, aside {
     /*Integrantes 3. Espaciado y box model.*/
-    margin: 0 auto;
+    margin: 2em;
     padding: 0 1rem;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    justify-content:center;
 }
 
 .Programas-Iniciativas {
     /*Integrantes 3. Color.*/
-	background-color: var(--color-fondo);
+    background-color: white;
     color: var(--color-texto);
+
+    /*Integrantes 3. Espaciado y box model.*/
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+.card {
+    /*Integrante 3: Espaciado y box model.*/
+    flex:1 1 350px;
+    padding:1.5rem;
+    border:2px solid var(--color-primario);
+    border-radius:8px;
+
+    display: flex;
 }
 
 h1{
@@ -152,5 +187,141 @@ p, ol, ul{
 	margin: 0 auto;
     padding: 0 1rem;
 }
-/*Fin de código escrito por Integrante 3.*/
 
+
+/*Integrantes 3. Para el titulo. Del archivo "programas.html".*/
+.DefinicionDe_enfermedades{
+    /*Integrantes 3. Espaciado y box model. Este es el contenedor principal. */
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em;
+
+    /*Integrantes 3. Tipografía, y color.*/
+    background-color: white;
+    border-radius: var(--color-secundario);
+}
+
+.DefinicionDe_enfermedades h3 {
+    /*Tipografía, y color. Espaciado. */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #1f3c88;
+    border-bottom: 2px solid var(--color-secundario); /*La linea que separa, abajo de "obtener más información ..." */
+    padding-bottom: 0.5em;
+}
+.DefinicionDe_enfermedades p {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.DefinicionDe_enfermedades a {
+    /* Color.  */
+    color: #0066cc;
+    text-decoration: none; /*Cuando pasas por el cursor, aparece una linea por debajo de las letras.*/
+}
+.DefinicionDe_enfermedades a:hover{
+    text-decoration: underline;
+}
+
+
+.DefinicionDe_enfermedades dl{
+    /*Tipografía, y color. Espaciado. Flexbox. */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.DefinicionDe_enfermedades dt{
+    /*Tipografía, y color. Espaciado.*/
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.2em;
+}
+
+.DefinicionDe_enfermedades dd{
+    /*Tipografía, y color. Espaciado.*/
+    margin-left: 0;
+    padding: 1em;
+    background-color: var(--color-fondo);
+    border-left: 5px solid #1f3c88;
+    border-radius: 8px;
+    color: #444;
+}
+
+.DefinicionDe_enfermedades dd:hover{
+    /* Efecto al pasar el mouse, por las definiciones. */
+    transform: translateX(5px);
+    transition: 0.3s; /*El tiempo que se expande el contenido.S*/
+    color: white;
+}
+
+
+/*Para la función de javascript del boton oscuro: al dar clik, todo la pagina entra en modo oscuro.*/
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .form-control {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #bbb;
+}
+
+
+
+
+
+/* Integrante 4: Personalización Bootstrap */
+
+.navbar{
+    border-radius: 12px;
+}
+
+.table th{
+    background-color: var(--color-primario);
+    color: white;
+}
+
+button{
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+button:hover{
+    background-color: #a50c0c;
+}
+
+.badge{
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+
+
+
+/* Bootstrap - personalizaciones del integrante 2*/
+.btn-ong {
+    background-color: var(--color-principal, #750606); /* Color rojo oscuro de ejemplo */
+    color: white; /* Color del texto */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por encima (hover) */
+.btn-ong:hover {
+    background-color: #a81c1c; /* Un rojo más oscuro para el hover */
+    color: white;
+}
