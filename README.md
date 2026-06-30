@@ -13,8 +13,8 @@ Tuvimos problemas al usar git.
 ### TP 1: HTML
 - Santiago: index.html — Página de inicio.
 - Sofia: contacto.html - Información de contacto.
-- Pablo: nosotros.html — Historia, valores y equipo.
-- Ezequiel: programas.html — Programas e iniciativas.
+- Ezequiel: nosotros.html — Historia, valores y equipo.
+- Pablo: programas.html — Programas e iniciativas.
 ### TP 2: CSS
 - Santiago: Variables CSS, reset, tipografía global y estilos del body.
 - Ezequiel: Header, navegación (incluyendo :hover) y footer.
