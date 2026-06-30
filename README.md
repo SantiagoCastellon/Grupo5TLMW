@@ -21,9 +21,9 @@ Tuvimos problemas al usar git.
 - Pablo: Secciones de contenido (section, article, headings, párrafos).
 - Sofia: Tabla, formulario y estilos de imágenes.
 ### TP 3: Bootstrap + CSS Avanzado
-Santiago: Navbar de Bootstrap: componente completo con hamburguesa, links y
+- Santiago: Navbar de Bootstrap: componente completo con hamburguesa, links y
 navbar-brand.
-Ezequiel: Grilla de Bootstrap en al menos una sección: container, row, col-*
+- Ezequiel: Grilla de Bootstrap en al menos una sección: container, row, col-*
 responsivos.
-Pablo: Flexbox en el CSS propio: cards o ítems de sección con display:flex.
-Sofia: Posicionamiento y personalización Bootstrap: position en algún elemento + estilos propios sobre Bootstrap.
+- Pablo: Flexbox en el CSS propio: cards o ítems de sección con display:flex.
+- Sofia: Posicionamiento y personalización Bootstrap: position en algún elemento + estilos propios sobre Bootstrap.
