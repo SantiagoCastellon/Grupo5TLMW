@@ -10,11 +10,12 @@
 /*Integrante 2: Header, navegación (incluyendo :hover) y footer.*/
 
 :root {
-    --color-primario: #c90e0e;    
-    --color-secundario: #7e0909;  
-    --color-acento: #ff1100;      
-    --color-fondo: #808080;       
-    --color-texto: #1A1A1A;       
+    /* Colores ajustados para contraste >= 8:1 */
+    --color-primario: #8b0000;    /* rojo oscuro */
+    --color-secundario: #5e0000;  /* rojo secundario más oscuro */
+    --color-acento: #b30000;      /* acento rojo oscuro */
+    --color-fondo: #ffffff;       /* fondo claro */
+    --color-texto: #0b0b0b;       /* texto muy oscuro */
     --fuente-principal: 'Roboto', sans-serif;
 }
 
@@ -48,7 +49,7 @@ header {
     color: #ffffff;
     padding: 2rem;
     text-align: center;
-    border-bottom: 4px solid var(--main-color-acento);
+    border-bottom: 4px solid var(--color-acento);
 
     /*Integrante 3: Espaciado y box model. Flexbox.*/
     display:flex;
@@ -183,7 +184,7 @@ section, article, aside {
 h1{
     /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 3em;
-    color: var(--color-fondo);
+    color: var(--color-texto);
 } 
 
 h2 {
@@ -218,7 +219,7 @@ li{
     padding: 2em;
 
     /*Integrantes 3. Tipografía, y color.*/
-    border-radius: var(--color-secundario);
+    border-radius: 8px;
 }
 
 .DefinicionDe_enfermedades h3 {
@@ -226,8 +227,8 @@ li{
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1em;
-    color: #1f3c88;
-    border-bottom: 2px solid var(--color-secundario); /*La linea que separa, abajo de "obtener más información ..." */
+    color: #102a5a; /* azul más oscuro para mejor contraste */
+    border-bottom: 2px solid var(--color-secundario);
     padding-bottom: 0.5em;
 }
 .DefinicionDe_enfermedades p {
@@ -236,7 +237,7 @@ li{
 }
 .DefinicionDe_enfermedades a {
     /* Color.  */
-    color: #0066cc;
+    color: #003e7e;
     text-decoration: none; /*Cuando pasas por el cursor, aparece una linea por debajo de las letras.*/
 }
 .DefinicionDe_enfermedades a:hover{
@@ -266,14 +267,15 @@ li{
     background-color: var(--color-fondo);
     border-left: 5px solid #1f3c88;
     border-radius: 8px;
-    color: #444;
+    color: var(--color-texto);
 }
 
 .DefinicionDe_enfermedades dd:hover{
     /* Efecto al pasar el mouse, por las definiciones. */
     transform: translateX(5px);
-    transition: 0.3s; /*El tiempo que se expande el contenido.S*/
-    color: white;
+    transition: 0.3s; /*El tiempo que se expande el contenido.*/
+    background-color: var(--color-primario);
+    color: #ffffff;
 }
 
 
@@ -334,7 +336,7 @@ button:hover{
 
 /* Bootstrap - personalizaciones del integrante 2*/
 .btn-ong {
-    background-color: var(--color-principal, #750606); /* Color rojo oscuro de ejemplo */
+    background-color: var(--color-primario, #750606); /* Color rojo oscuro de ejemplo */
     color: white; /* Color del texto */
     border: none;
     transition: background-color 0.3s ease;
@@ -354,8 +356,8 @@ button:hover{
 }
 
 .tabla-programas th{
-    background:#c8102e;
-    color:white;
+    background: var(--color-primario);
+    color: #ffffff;
     padding:15px;
     text-align:left;
 }
@@ -377,7 +379,8 @@ button:hover{
 
 body{
     font-family: Arial, sans-serif;
-    background-color:#f2f2f2;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
 .formulario{
@@ -390,12 +393,12 @@ body{
 }
 
 h2{
-    color:#d71920;
+    color: var(--color-primario);
     margin-bottom:10px;
 }
 
 p{
-    color:#555;
+    color: var(--color-texto);
     margin-bottom:25px;
 }
 
