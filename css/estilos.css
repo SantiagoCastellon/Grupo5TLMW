@@ -436,3 +436,11 @@ button{
 button:hover{
     background:#b31318;
 }
+/* Bootstrap - personalizaciones */
+#barra-de-navegacion{
+    background-color: var(--color-fondo) !important;
+}
+#btnNavbar{
+    color: var(--color-texto) !important;
+    font-weight: bold;
+}
