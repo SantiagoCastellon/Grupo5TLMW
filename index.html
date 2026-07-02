@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,37 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Inicio MSF</title>
 </head>
+
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="barra-de-navegacion">
             <div class="container">
-                <img src="imagenes/msf_logo.svg" alt="Logo MSF" width="40">
-                <a class="navbar-brand ms-2" href="#">Medicos sin fronteras AR</a>
+                <a class="navbar-brand ms-2" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/msf_logo.svg" alt="Logo MSF" width="100">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Navegación
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#PresentacionONG">Quienes somos</a></li>
-                                    <li><a class="dropdown-item" href="#MisionONG">Que hacemos</a></li>
-                                    <li><a class="dropdown-item" href="#ResumenAreasDeTrabajo">Ver Areas de Trabajo</a>
-                                    </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html" id="btnNavbar">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html" id="btnNavbar">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programas.html" id="btnNavbar">Programas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html" id="btnNavbar">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="btnNavbar">
+                                Navegación
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#PresentacionONG" id="btnNavbar">Quienes somos</a></li>
+                                <li><a class="dropdown-item" href="#MisionONG" id="btnNavbar">Que hacemos</a></li>
+                                <li><a class="dropdown-item" href="#ResumenAreasDeTrabajo" id="btnNavbar">Ver Areas de Trabajo</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,46 +47,62 @@
 
     <!-- Contenedor General con ancho máximo -->
     <main class="container my-5">
-        
+
         <h1 class="text-center mb-5">Medicos sin fronteras AR</h1>
 
-        <section id="PresentacionONG" class="mb-5">
-            <div class="card p-4 shadow-sm">
-                <h2 class="text-center">Presentación de la ONG</h2>
-                <p>Médicos Sin Fronteras (MSF) es una organización <strong>médico-humanitaria</strong> que brinda ayuda a víctimas de catástrofes y conflictos.</p>
-            </div>
-        </section>
+        <article>
+            <section id="PresentacionONG" class="mb-5">
+                <div class="card p-4 shadow-sm">
+                    <h2 class="text-center">Presentación de la ONG</h2>
+                    <img src="https://picsum.photos/id/1011/600/400"
+                        alt="Médicos brindando asistencia humanitaria en un hospital de campaña" class="img-fluid my-3">
+                    <p>Médicos Sin Fronteras (MSF) es una organización <strong>médico-humanitaria</strong> que brinda
+                        ayuda a víctimas de catástrofes y conflictos.</p>
+                </div>
+            </section>
 
-        <section id="MisionONG" class="mb-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card p-4 h-100 shadow-sm">
-                        <h2 class="text-danger">Misión</h2>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Acción Médica:</strong> Salvar vidas en crisis agudas.</li>
-                            <li class="list-group-item"><strong>Testimonio:</strong> Denunciar injusticias.</li>
-                        </ul>
+            <section id="MisionONG" class="mb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card p-4 h-100 shadow-sm">
+                            <h2 class="text-danger">Misión</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Acción Médica:</strong> Salvar vidas en crisis
+                                    agudas.</li>
+                                <li class="list-group-item"><strong>Testimonio:</strong> Denunciar injusticias.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Ejemplo de tarjeta para imagen -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png" class="card-img-top"
+                                alt="Áreas de trabajo">
+                        </div>
                     </div>
                 </div>
-                <!-- Ejemplo de tarjeta para imagen -->
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <img src="imagenes/Gemini_Generated_Image_sma0mtsma0mtsma0.png" class="card-img-top" alt="Áreas de trabajo">
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </article>
 
         <section id="TablaInfo" class="mb-5">
             <h2 class="text-center">Resumen Institucional</h2>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover mt-3">
                     <thead class="table-primary">
-                        <tr><th>Área</th><th>Descripción</th></tr>
+                        <tr>
+                            <th>Área</th>
+                            <th>Descripción</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Médica</td><td>Atención de emergencias</td></tr>
-                        <tr><td>Logística</td><td>Suministro y soporte</td></tr>
+                        <tr>
+                            <td>Médica</td>
+                            <td>Atención de emergencias</td>
+                        </tr>
+                        <tr>
+                            <td>Logística</td>
+                            <td>Suministro y soporte</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -103,5 +124,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

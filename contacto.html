@@ -37,7 +37,9 @@
             </nav>
         </div>
     </header>
-    
+   
+<main>
+
     <h1>Pagina de contacto</h1>
     <p>¿Tenés alguna duda? <strong>¡contactanos!</strong> estamos a tu disposición para responder cualquier consulta. Podés comunicate con nosotros a través del teléfono, correo electrónico o visitarnos en nuestra ubicación.</p><br>
 
@@ -46,7 +48,7 @@
     <h2 class="text-danger d-inline">Programas</h2>
 
     <span class="badge bg-danger position-absolute top-0 start-100 ms-2">
-        Nuevo
+        Activos
     </span>
     
   </div>
@@ -55,7 +57,7 @@
 
     <p>Médicos Sin Fronteras desarrolla programas humanitarios en distintas partes del mundo con el objetivo de brindar atención médica y asistencia a personas afectadas por guerras, epidemias, desastres naturales y situaciones de extrema pobreza. A través de hospitales, campañas de vacunación, apoyo nutricional y asistencia psicológica, la organización trabaja para mejorar la calidad de vida de miles de personas que no tienen acceso a servicios básicos de salud. Sus equipos de voluntarios y profesionales actúan rápidamente en emergencias para ofrecer ayuda humanitaria en los lugares más necesitados.</p>
      
-    <table class="table table-striped table-bordered">
+    <table class="tabla-programas">
       
         <thead>
             <tr>
@@ -105,7 +107,7 @@
              <td>400 Personas</td>
             </tr>
 
-        </tbody><br>
+        </tbody>
 
         <tfoot>
 
@@ -120,22 +122,49 @@
         </tfoot>
 
     </table><br><br> 
+
+    <h2>Sumate como voluntario</h2>
+
+     <p>
+         Médicos Sin Fronteras trabaja en distintos lugares del mundo brindando
+         atención médica, asistencia alimentaria, apoyo psicológico y ayuda en
+         situaciones de emergencia. Cada uno de estos programas es posible gracias
+         al compromiso de profesionales y voluntarios que dedican su tiempo y sus
+         conocimientos para ayudar a comunidades que atraviesan crisis humanitarias.
+     </p>
+
+     <p>
+         Si compartís nuestros valores de solidaridad, respeto y compromiso con las
+         personas más vulnerables, te invitamos a formar parte de nuestra misión.
+         No importa si tenés experiencia previa o simplemente ganas de colaborar;
+         cada aporte puede marcar una diferencia significativa en la vida de quienes
+         más lo necesitan.
+     </p>
+
+     <p>
+         Completá el siguiente formulario con tus datos personales y seleccioná el
+         área de voluntariado que más te interese. Nuestro equipo revisará tu
+         solicitud y se pondrá en contacto con vos para brindarte más información
+         sobre las oportunidades de participación disponibles.
+     </p>
     
+    <div class="formulario">
+
     <h2>Inscripcion de voluntarios</h2>
-     <p>completa el formulario para formar parte de Medicos sin frontera</tp>
+     <p>completa el formulario para formar parte de Medicos sin frontera</tp><br><br>
 
         <form action="/enviar" method="post">
 
-           <label for="nombre">Nombre Completo</label>
+           <label for="nombre">Nombre Completo</label><br>
            <input type="text" id="nombre" name="nombre" required><br><br>
 
-           <label for="email">Correo electronico</label>
+           <label for="email">Correo electronico</label><br>
            <input type="email" id="email" name="email" required><br><br>
 
-           <label for="edad">Edad</label>
+           <label for="edad">Edad</label><br>
            <input type="number" id="edad" name="edad" required><br><br>
 
-           <label for="pais">Pais</label>
+           <label for="pais">Pais</label><br>
            <select id="pais" name="pais">
               
             <option value="">Seleccionar</option>
@@ -337,7 +366,7 @@
             
            </select><br><br>
 
-           <label for="area">Área de voluntariado</label>
+           <label for="area">Área de voluntariado</label><br>
            <select id="area" name="area">
             
             <option value="">Seleccionar</option>
@@ -356,6 +385,8 @@
            <button type="submit">Enviar inscripción</button><br><br><br><br>
 
         </form>
+        </div>
+</main>
 
 
     <footer>

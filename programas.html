@@ -1,73 +1,108 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> 
+<html lang="es"> 
+
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport"  content="width=device-width"> 
-    
+
+    <!--Para que Bootstrop funcione en celulares.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
+
     <title>Programa/Iniciativas</title>
 </head>
+
 <body>
-    <header>
-        <div class="barra-de-navegacion">
-            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" navbar-expand-lg
-                bg-body-tertiary">
-                <div class="container-fluid">
-                    <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
-                    <a class="navbar-brand" href="https://www.msf.org.ar" target="_blank" rel="noopener noreferrer">
-                        Medicos sin fronteras AR
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="programas.html">Programas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+   
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+
+            <img src="imagenes/msf_logo.svg" alt="Logo MSF" width="40">
+
+            <a class="navbar-brand ms-2" href="index.html">
+                Médicos sin fronteras AR
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="programas.html">
+                            Programas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
         </div>
-        <!--
-        <h1 id="heading_de_archivo_Programas_Iniciativas">Medicos sin fronteras AR</h1>
-        <img src="imagenes/msf_logo.svg" alt="Logo de medicos sin fronteras">
-        <nav id="Volver_inicio_del_SitioWeb">
-            <a href="index.html">Volver a inicio.</a>
-        </nav>
-        -->
-    </header>
+    </nav>
+</header>
 
-    <main>
+<div class="container py-5">  
+    <div class="card shadow mb-4">
+        <div class="card-body text-center">
+
+            <h1>Modo Oscuro</h1>
+
+            <button id="botonModoOscuro" class="btn btn-dark"> Cambiar tema </button>
+        </div>
+    </div>
+</div>
+
+   <!-- container = centra el contenido y limita el ancho; my-5 = margen vertical (arriba y abajo). -->
+    <main class="container my-5">
         <section class="Programas-Iniciativas">
-            <h2 class="titulo_2__de_pagina_Programas_Iniciativas">Programas/Iniciativas:</h2>
+            <h2>Programas/Iniciativas:</h2>
 
-            <section class="Atencion_deEmergencias_y_conflictosArmados">
-                <h3 class="titulo_3__de_pagina_Programas_Iniciativas">Atención de emergencias y conflictos armados.</h3>
-                    <ul>
-                        <li> <strong> <em>¿De qué se trata?</em></strong>: Equipos médicos de respuesta rápida en guerras, desastres naturales y <a href="#definicion_epidemia">epidemias</a>. Cirugías de guerra, hospitales de campaña, atención a heridos y desplazados.</li>
+            <section class="card w-100 mb-4">
+                <div class="card-body">
+                    <h3>Atención de emergencias y conflictos armados.</h3>
+                        <ul>
+                            <li> <strong> <em>¿De qué se trata?</em></strong>: Equipos médicos de respuesta rápida en guerras, desastres naturales y <a href="#definicion_epidemia">epidemias</a>. Cirugías de guerra, hospitales de campaña, atención a heridos y desplazados.</li>
 
-                        <li> <strong><em>¿A quién está dirigido?</em></strong> : Poblaciones civiles atrapadas en crisis humanitarias donde el sistema de salud colapsó. Ejemplo: Gaza, Sudán, Ucrania, campos de refugiados. O puedes trabajar con nosotros. Si sos profesional de salud, logística, agua/saneamiento o administración. Requiere experiencia, disponibilidad de 6-12 meses e idiomas. Postulate en la web de MSF Argentina.</li> 
+                            <li> <strong><em>¿A quién está dirigido?</em></strong> : Poblaciones civiles atrapadas en crisis humanitarias donde el sistema de salud colapsó. Ejemplo: Gaza, Sudán, Ucrania, campos de refugiados. O puedes trabajar con nosotros. Si sos profesional de salud, logística, agua/saneamiento o administración. Requiere experiencia, disponibilidad de 6-12 meses e idiomas. Postulate en la web de MSF Argentina.</li> 
 
-                        <li><strong><em>¿Cómo participar?</em></strong>  : Pueder aportar mensual o único en http://msf.org.ar. MSF se financia 97% con donantes privados para ser independiente.</li>
-                    </ul>
+                            <li><strong><em>¿Cómo participar?</em></strong>  : Pueder aportar mensual o único en http://msf.org.ar. MSF se financia 97% con donantes privados para ser independiente.</li>
+                        </ul>
+                 </div>   
             </section>
 
-            <section class="Desnutricion_infantil">
-                <h3 class="titulo_3__de_pagina_Programas_Iniciativas"><strong>Tratamiento de desnutrición infantil.</strong></h3>
+            <section class="card w-100 mb-4">
+                 <div class="card-body">
+                     <h3><strong>Tratamiento de desnutrición infantil.</strong></h3>
                     <ul>
                         <li><strong><em>¿De qué se trata?</em></strong> : Centros de nutrición terapéutica para chicos con desnutrición aguda severa. Usan alimento terapéutico listo para usar y seguimiento médico.</li>
 
@@ -79,12 +114,15 @@
                                  <li>O difundiendo: Ser voluntario en eventos, charlas en universidades o colegios. Anotate en http://msf.org.ar/voluntariado.</li>
                             </ol>         
                     </ul>
+                </div>
+               
             </section>
 
-            <section class="Acceso_medicamentos">
-                <h3 class="titulo_3__de_pagina_Programas_Iniciativas"><strong>Campaña de Acceso a Medicamentos.</strong></h3>
+            <section class="card w-100 mb-4">
+                 <div class="card-body">
+                    <h3><strong>Campaña de Acceso a Medicamentos.</strong></h3>
                     <ul>
-                        <li><strong><em>¿De qué se trata?</em></strong> : Presio diplomatica a gobiernos y farmacéuticas para bajar precios de vacunas, <a href="def_VIH">VIH</a> , <a href="#def_tuberculosis">tuberculosis</a> y <a href="def_hepatitisC">hepatitis C</a>. También investigamos y desarrollamos tratamientos para enfermedades olvidadas como <a href="def_chagas">Chagas</a> o <a href="def_kalas-azar">kala-azar</a>.</li>
+                        <li><strong><em>¿De qué se trata?</em></strong> : Presio diplomatica a gobiernos y farmacéuticas para bajar precios de vacunas, <a href="#def_VIH">VIH</a> , <a href="#def_tuberculosis">tuberculosis</a> y <a href="#def_hepatitisC">hepatitis C</a>. También investigamos y desarrollamos tratamientos para enfermedades olvidadas como <a href="#def_chagas">Chagas</a> o <a href="#def_kalas-azar">kala-azar</a>.</li>
 
                         <li><strong><em>¿A quién está dirigido?</em> </strong> : Pacientes de países de bajos ingresos que no pueden pagar tratamientos caros.</li>
 
@@ -95,29 +133,31 @@
                                 <li>Ser activista digital*: Compartir informes y sumarte a acciones de incidencia.</li>
                             </ol>  
                         </li>
-                    </ul>  
+                    </ul> 
+                </div>      
             </section>
 
             <article class="DefinicionDe_enfermedades">
-                <h3 class="titulo_3__de_pagina_Programas_Iniciativas">Definiciones de enfermedades:</h3>
+                <h3>Definiciones de enfermedades:</h3>
                     <p>Para mas información sobre estas enfermedades, visite: <a href="https://medlineplus.gov/spanish/encyclopedia.hmtl" target="_blank" rel="noopener noreferrer">MedlinePlus. </a> </p>
                     <dl>
-                        <dt class="definicion_epidemia">Epidemia:</dt>
+                        <!--Para que un link rediriga a la misma pagina (enlace interno o ancla), debes marcarla antes con id="#palabra" dentro de <a>. -->
+                        <dt id="definicion_epidemia">Epidemia:</dt>
                             <dd>Enfermedad infecciosa que durante un periodo de teimpo ataca, simultáneamente y en un mismo territorio, a gran número de personas.</dd>
 
-                        <dt class="def_VIH">VIH:</dt>
+                        <dt id="def_VIH">VIH:</dt>
                             <dd>Virus que ataca y destruye las células del sistema inmunitario, específicamente los linfocitos CD4, debilitando las defensas del cuerpo contra infecciones y cánceres. </dd>
 
-                        <dt class="def_tuberculosis">Tuberculosis: </dt>
+                        <dt id="def_tuberculosis">Tuberculosis: </dt>
                             <dd>Enfermedad infecciosa y contagiosa porducida por la bacteria Mycobacterium. Afecta principalmente a los pulpones, aunque puede dañar otros órganos como riñones, columna o cerebro.</dd>
 
-                         <dt class="def_hepatitisC">Hepatitis C:</dt>
+                         <dt id="def_hepatitisC">Hepatitis C:</dt>
                             <dd>Inflamación del hígado, un órgano vital que procesa nutrientes, filtra la sangre y combate infecciones. </dd>
 
-                        <dt class="def_chagas">Chagas:</dt>
+                        <dt id="def_chagas">Chagas:</dt>
                             <dd>Infección parasitaria causada por el protozoo Trypanosama cuzzi. Se transmite por la cinchuca y afecta a 6 millones de latinoamericanos.</dd>
 
-                        <dt class="def_kalas-azar">Kalas-azar:</dt>
+                        <dt id="def_kalas-azar">Kalas-azar:</dt>
                             <dd>Infección parasitaria causada por la picadura de cierto tipo de mosquito de la arena.</dd>
                     </dl>
             </article>      
@@ -125,13 +165,29 @@
     </main>
     
     <aside>
-       <img src="https://msf.mx/wp-content/uploads/2025/12/MSF30248_content-1024x576.webp" alt="Atencion_medica_en_conflitos_armados" width="400" height="200">
-       <img src="https://gdb.voanews.com/09320000-0a00-0242-25a2-08db0211250d_cx0_cy10_cw0_w1023_r1_s.jpg" alt="Desnutricion_infantil" width="400" height="200">
-       <img src="https://saludeverywhere.com/wp-content/uploads/2024/07/MDM-GR-0134-e1721858497614-1024x608.jpg.webp" alt="Acceso_medicamentos" width="400" height="200">
+        <div class="container my-5">
+            <div class="row">
+                <!-- "row" = crea fila. "col-md-4" = ocupa 4 de las 12 columnas.  -->
+                <div class="col-md-4">
+                    <!-- "img-fluid" = imagen adaptable. "rounded "= bordes redondeados. "shadow-sm" = sombra.-->
+                    <img src="https://msf.mx/wp-content/uploads/2025/12/MSF30248_content-1024x576.webp" class="img-fluid rounded shadow-sm" alt="Atencion_medica_en_conflitos_armados">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://gdb.voanews.com/09320000-0a00-0242-25a2-08db0211250d_cx0_cy10_cw0_w1023_r1_s.jpg" class="img-fluid rounded shadow-sm" alt="Desnutricion_infantil">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://saludeverywhere.com/wp-content/uploads/2024/07/MDM-GR-0134-e1721858497614-1024x608.jpg.webp" class="img-fluid rounded shadow-sm" alt="Acceso_medicamentos"> 
+                </div>
+            </div>
+            
+        </div>   
     </aside>
 
    <footer>
        <a href="contacto.html">Contacto</a>
    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

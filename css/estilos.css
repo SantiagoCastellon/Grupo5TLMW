@@ -10,11 +10,12 @@
 /*Integrante 2: Header, navegación (incluyendo :hover) y footer.*/
 
 :root {
-    --color-primario: #c90e0e;    
-    --color-secundario: #7e0909;  
-    --color-acento: #ff1100;      
-    --color-fondo: #808080;       
-    --color-texto: #1A1A1A;       
+    /* Colores ajustados para contraste >= 8:1 */
+    --color-primario: #8b0000;    /* rojo oscuro */
+    --color-secundario: #5e0000;  /* rojo secundario más oscuro */
+    --color-acento: #b30000;      /* acento rojo oscuro */
+    --color-fondo: #ffffff;       /* fondo claro */
+    --color-texto: #0b0b0b;       /* texto muy oscuro */
     --fuente-principal: 'Roboto', sans-serif;
 }
 
@@ -32,11 +33,15 @@ body {
     font-family: var(--fuente-principal);
     font-size: 16px;
     line-height: 1.6;
-    max-width: 1100px;
+    
+    /*Elimine el max-widt para agrandar la pagina.*/
+
     margin: 0 auto;
     padding: 0 1rem;
     background-color: var(--color-fondo);
     color: var(--color-texto);
+
+    overflow-x: hidden; /*Para evitar scroll horizontal.*/
 }
 
 header {
@@ -44,12 +49,21 @@ header {
     color: #ffffff;
     padding: 2rem;
     text-align: center;
-    border-bottom: 4px solid var(--main-color-acento);
+    border-bottom: 4px solid var(--color-acento);
+
+    /*Integrante 3: Espaciado y box model. Flexbox.*/
+    display:flex;
+    align-items:center; /*Centra verticalmente. */
+    justify-content:center; /*Centra horizontalmente. */
+    gap:20px; /*Espacio entre logo y texto.*/
 }
 
 header h1 { /* Integrante 2: Header */
     font-size: 2.5rem;
     margin-bottom: 1rem;
+
+    /*Integrante 3: Espaciado y box model. Flexbox.*/
+    display: flex;
 }
 
 nav { /* Integrante 2: Navegación (incluyendo :hover) */
@@ -57,9 +71,6 @@ nav { /* Integrante 2: Navegación (incluyendo :hover) */
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center; 
-
-    /* Integrante 3. Flexbox. */
-
 }
 
 nav ul { /* Integrante 2: Navegación (incluyendo :hover) */
@@ -79,6 +90,9 @@ nav a { /* Integrante 2: Navegación (incluyendo :hover) */
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
     display: inline-block; 
+
+    /*Integrante 3: Espaciado y box model.*/
+    display: flex;
 }
 
 
@@ -94,7 +108,10 @@ footer {
     text-align: center;
     margin-top: 3rem;
 
-    /* Integrante 3. Flexbox. */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
 }
 
 footer a { /* Integrante 2: Footer */
@@ -121,33 +138,64 @@ main {
     max-width: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 section, article, aside {
     /*Integrantes 3. Espaciado y box model.*/
-    margin: 0 auto;
+    margin: auto; /*Centra el contenido.*/
     padding: 0 1rem;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    justify-content:center;
+
+    display: flex;
 }
 
 .Programas-Iniciativas {
     /*Integrantes 3. Color.*/
-	background-color: var(--color-fondo);
+    background-color: white;
     color: var(--color-texto);
+
+    /*Integrantes 3. Espaciado y box model.*/
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+.card {
+    /*Integrante 3: Espaciado y box model.*/
+    flex:1 1 350px;
+    padding:1.5rem;
+    border:2px solid var(--color-primario);
+    border-radius:8px;
+
+    display: flex;
+}
+
+.card p,
+.card h2,
+.card h3{
+    overflow-wrap: break-word;
 }
 
 h1{
     /*Integrantes 3. Tipografía, y color de heading.*/
 	font-size: 3em;
-    color: var(--color-fondo);
+    color: var(--color-texto);
 } 
 
 h2 {
     /*Integrantes 3. Tipografía, y color de heading.*/
-	font-size: 2em;
+	font-size: clamp(1.5rem, 4vw, 2.5rem); /*clamp() = cambia el tamaño segun la pantalla.*/
 	color: var(--color-primario);
 } 
 
 h3 {
     /*Integrantes 3. Tipografía, y color de heading.*/
-	font-size: 1em;
+	font-size: clamp(1.5rem, 4vw, 2.5rem); /*clamp() = cambia el tamaño segun la pantalla.*/
 }
 
 p, ol, ul{
@@ -155,6 +203,106 @@ p, ol, ul{
 	margin: 0 auto;
     padding: 0 1rem;
 }
+
+li{
+    /*Para evitar que las listas sean muy largas. Como contienen muchos parrafos, en movil se vera mejor asi.*/
+    line-height: 1.7;
+    margin-bottom: .8rem;
+}
+
+
+/*Integrantes 3. Para el titulo. Del archivo "programas.html".*/
+.DefinicionDe_enfermedades{
+    /*Integrantes 3. Espaciado y box model. Este es el contenedor principal. */
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em;
+
+    /*Integrantes 3. Tipografía, y color.*/
+    border-radius: 8px;
+}
+
+.DefinicionDe_enfermedades h3 {
+    /*Tipografía, y color. Espaciado. */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #102a5a; /* azul más oscuro para mejor contraste */
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 0.5em;
+}
+.DefinicionDe_enfermedades p {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.DefinicionDe_enfermedades a {
+    /* Color.  */
+    color: #003e7e;
+    text-decoration: none; /*Cuando pasas por el cursor, aparece una linea por debajo de las letras.*/
+}
+.DefinicionDe_enfermedades a:hover{
+    text-decoration: underline;
+}
+
+
+.DefinicionDe_enfermedades dl{
+    /*Tipografía, y color. Espaciado. Flexbox. */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.DefinicionDe_enfermedades dt{
+    /*Tipografía, y color. Espaciado.*/
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.2em;
+}
+
+.DefinicionDe_enfermedades dd{
+    /*Tipografía, y color. Espaciado.*/
+    margin-left: 0;
+    padding: 1em;
+    background-color: var(--color-fondo);
+    border-left: 5px solid #1f3c88;
+    border-radius: 8px;
+    color: var(--color-texto);
+}
+
+.DefinicionDe_enfermedades dd:hover{
+    /* Efecto al pasar el mouse, por las definiciones. */
+    transform: translateX(5px);
+    transition: 0.3s; /*El tiempo que se expande el contenido.*/
+    background-color: var(--color-primario);
+    color: #ffffff;
+}
+
+
+/*Para la función de javascript del boton oscuro: al dar clik, todo la pagina entra en modo oscuro..*/
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .form-control {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #bbb;
+}
+
+
+
+
 
 /* Integrante 4: Personalización Bootstrap */
 
@@ -188,7 +336,7 @@ button:hover{
 
 /* Bootstrap - personalizaciones del integrante 2*/
 .btn-ong {
-    background-color: var(--color-principal, #750606); /* Color rojo oscuro de ejemplo */
+    background-color: var(--color-primario, #750606); /* Color rojo oscuro de ejemplo */
     color: white; /* Color del texto */
     border: none;
     transition: background-color 0.3s ease;
@@ -198,4 +346,101 @@ button:hover{
 .btn-ong:hover {
     background-color: #a81c1c; /* Un rojo más oscuro para el hover */
     color: white;
+}
+
+.tabla-programas{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:white;
+}
+
+.tabla-programas th{
+    background: var(--color-primario);
+    color: #ffffff;
+    padding:15px;
+    text-align:left;
+}
+
+.tabla-programas td{
+    padding:15px;
+    border:1px solid #d9d9d9;
+}
+
+.tabla-programas tbody tr:nth-child(even){
+    background:#f5f5f5;
+}
+
+.tabla-programas tfoot{
+    font-weight:bold;
+    background:#efefef;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.formulario{
+    width:500px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+h2{
+    color: var(--color-primario);
+    margin-bottom:10px;
+}
+
+p{
+    color: var(--color-texto);
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    background:#d71920;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#b31318;
+}
+/* Bootstrap - personalizaciones */
+#barra-de-navegacion{
+    background-color: var(--color-fondo) !important;
+}
+#btnNavbar{
+    color: var(--color-texto) !important;
+    font-weight: bold;
 }
